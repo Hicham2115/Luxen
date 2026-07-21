@@ -44,43 +44,43 @@ export function Hero() {
       />
       <div className="absolute inset-0 -z-10 hidden bg-[linear-gradient(90deg,#fff_0%,rgba(255,255,255,0.98)_22%,rgba(255,255,255,0.76)_39%,rgba(255,255,255,0.1)_58%,rgba(255,255,255,0)_100%)] lg:block" />
 
-      <div className="mx-auto max-w-[1270px] px-5 pt-10 sm:px-8 lg:px-0 lg:pt-[58px]">
+      <div className="mx-auto max-w-[1270px] px-5 pt-12 sm:px-8 md:pt-16 lg:px-0 lg:pt-[58px]">
         <div className="relative lg:min-h-145">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative z-10 max-w-[590px]"
+            className="relative z-10 mx-auto max-w-[720px] text-center lg:mx-0 lg:max-w-[590px] lg:text-left"
           >
-            <h1 className="text-[38px] font-extrabold leading-[1.1] tracking-[-0.055em] text-[#06265a] sm:text-[52px] lg:text-[60px]">
+            <h1 className="text-[clamp(2.35rem,8vw,5rem)] font-extrabold leading-[1.04] tracking-[-0.055em] text-[#06265a] lg:text-[60px]">
               Votre expert
               <br />
               en plomberie,
               <br />
               <span className="text-sky-500">à votre service</span>
             </h1>
-            <p className="mt-5 max-w-[480px] text-[17px] leading-[1.7] text-[#45618d] lg:text-[18px]">
+            <p className="mx-auto mt-6 max-w-[620px] text-[clamp(1.05rem,2.8vw,1.65rem)] leading-[1.6] text-[#45618d] lg:mx-0 lg:mt-5 lg:max-w-[480px] lg:text-[18px]">
               Des solutions de plomberie rapides, fiables et durables pour votre
               confort au quotidien.
             </p>
 
-            <div className="mt-7 grid max-w-[540px] grid-cols-2 sm:grid-cols-4">
+            <div className="mx-auto mt-8 grid max-w-[760px] grid-cols-4 gap-2 sm:gap-4 lg:mx-0 lg:mt-7 lg:max-w-[540px] lg:gap-0">
               {features.map(({ icon: Icon, label }, index) => (
                 <motion.div
                   key={label}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 + index * 0.1 }}
-                  className="flex min-h-[108px] flex-col items-center gap-2 border-r border-[#dce7f3] px-3 text-center last:border-r-0"
+                  className="flex min-h-[118px] flex-col items-center justify-center gap-2 rounded-2xl border border-[#e7edf5] bg-white px-1.5 text-center shadow-[0_8px_22px_rgba(7,47,93,0.06)] sm:min-h-[150px] sm:px-3 lg:min-h-[108px] lg:rounded-none lg:border-0 lg:border-r lg:bg-transparent lg:shadow-none lg:last:border-r-0"
                 >
-                  <span className="flex h-[64px] w-[64px] items-center justify-center rounded-xl bg-white shadow-[0_10px_22px_rgba(7,47,93,0.06)]">
+                  <span className="flex h-10 w-10 items-center justify-center text-sky-500 sm:h-16 sm:w-16 lg:rounded-xl lg:bg-white lg:shadow-[0_10px_22px_rgba(7,47,93,0.06)]">
                     <Icon
                       aria-hidden="true"
                       strokeWidth={1.8}
-                      className="h-8 w-8 text-sky-500"
+                      className="h-7 w-7 sm:h-9 sm:w-9 lg:h-8 lg:w-8"
                     />
                   </span>
-                  <span className="max-w-[100px] text-[14px] font-medium leading-[1.4] text-[#09245a]">
+                  <span className="max-w-[150px] text-[clamp(0.72rem,2vw,1.1rem)] font-semibold leading-[1.35] text-[#09245a] lg:max-w-[100px] lg:text-[14px] lg:font-medium lg:leading-[1.4]">
                     {label}
                   </span>
                 </motion.div>
@@ -91,13 +91,13 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
-              className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center"
+              className="mx-auto mt-8 flex w-full max-w-[565px] flex-col gap-4 lg:mx-0 lg:mt-7 lg:flex-row lg:max-w-none lg:items-center"
             >
               <a
                 href="#contact"
                 className={cn(
                   buttonVariants({ size: "lg" }),
-                  "h-[55px] gap-3 rounded-xl bg-sky-500 px-7 text-[16px] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-sky-600",
+                  "h-16 w-full gap-3 rounded-2xl bg-sky-500 px-7 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-sky-600 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px]",
                 )}
               >
                 Demander un devis{" "}
@@ -107,7 +107,7 @@ export function Hero() {
                 href="#services"
                 className={cn(
                   buttonVariants({ variant: "outline", size: "lg" }),
-                  "h-[55px] gap-3 rounded-xl border-[#dce4ef] bg-white px-6 text-[16px] font-semibold text-[#09245a] shadow-sm hover:bg-sky-50",
+                  "h-16 w-full gap-3 rounded-2xl border-[#dce4ef] bg-white px-6 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-[#09245a] shadow-[0_8px_20px_rgba(9,42,83,0.1)] hover:bg-sky-50 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px] lg:shadow-sm",
                 )}
               >
                 <span className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-sky-500">
@@ -121,23 +121,35 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="relative mt-10 aspect-[1.5] overflow-hidden rounded-2xl lg:hidden"
-          >
-            <Image
-              src={heroImage}
-              alt="Plombier réparant une installation sous un évier"
-              fill
-              preload
-              sizes="100vw"
-              className="object-cover"
-              style={{ objectPosition: "80% center" }}
-            />
-          </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative -mx-5 mt-8 aspect-4/5 overflow-hidden sm:-mx-8 sm:mt-12 sm:aspect-video lg:hidden"
+        >
+          <Image
+            src={heroImage}
+            alt="Plombier réparant une installation sous un évier"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            style={{ objectPosition: "72% center" }}
+          />
+
+          <div className="absolute bottom-5 left-5 w-28 rounded-2xl bg-sky-500 px-3 py-4 text-center text-white shadow-[0_12px_28px_rgba(14,165,233,0.28)] sm:bottom-7 sm:left-7 sm:w-42 sm:px-4 sm:py-5">
+            <p className="text-[30px] font-extrabold leading-none tracking-tight sm:text-[48px]">
+              10+
+            </p>
+            <p className="mt-1.5 text-[12px] font-medium leading-[1.3] sm:mt-2 sm:text-[16px]">
+              Années
+              <br />
+              d&apos;expérience
+            </p>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}

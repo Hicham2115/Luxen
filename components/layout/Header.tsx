@@ -18,15 +18,15 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-50 bg-white">
-      <div className="mx-auto flex h-20 max-w-[1270px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-0">
+    <header className="relative z-50 border-b border-[#e5ebf2] bg-white">
+      <div className="mx-auto flex h-20 max-w-[1270px] items-center justify-between gap-4 px-5 sm:h-28 sm:px-8 lg:h-20 lg:px-0">
         <Link href="/" className="flex items-center gap-3" aria-label="Luxen, accueil">
-          <span className="relative flex h-11 w-11 items-center justify-center text-sky-500">
-            <Droplet aria-hidden="true" strokeWidth={2.5} className="h-11 w-11" />
-            <Wrench aria-hidden="true" strokeWidth={2.4} className="absolute bottom-1 h-5 w-5 rounded-full bg-white p-0.5" />
+          <span className="relative flex h-11 w-11 items-center justify-center text-sky-500 sm:h-15 sm:w-15 lg:h-11 lg:w-11">
+            <Droplet aria-hidden="true" strokeWidth={2.5} className="h-11 w-11 sm:h-15 sm:w-15 lg:h-11 lg:w-11" />
+            <Wrench aria-hidden="true" strokeWidth={2.4} className="absolute bottom-1 h-5 w-5 rounded-full bg-white p-0.5 sm:h-6 sm:w-6 lg:h-5 lg:w-5" />
           </span>
           <span className="flex flex-col leading-[0.9] tracking-tight">
-            <span className="text-[22px] font-extrabold text-[#08285a]">LUXEN</span>
+            <span className="text-[22px] font-extrabold text-[#08285a] sm:text-[30px] lg:text-[22px]">LUXEN</span>
           </span>
         </Link>
 
@@ -57,15 +57,24 @@ export function Header() {
           06 123 456 78
         </a>
 
-        <button
-          type="button"
-          onClick={() => setIsMenuOpen((open) => !open)}
-          aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-          aria-expanded={isMenuOpen}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-foreground lg:hidden"
-        >
-          {isMenuOpen ? <X aria-hidden="true" className="h-6 w-6" /> : <Menu aria-hidden="true" className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-3 sm:gap-6 lg:hidden">
+          <a
+            href="tel:0612345678"
+            aria-label="Appelez-nous"
+            className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500 text-white shadow-[0_10px_22px_rgba(14,165,233,0.28)] sm:h-[88px] sm:w-[88px] sm:rounded-[20px]"
+          >
+            <Phone aria-hidden="true" className="h-5 w-5 sm:h-9 sm:w-9" />
+          </a>
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={isMenuOpen}
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-[#08285a] sm:h-14 sm:w-14"
+          >
+            {isMenuOpen ? <X aria-hidden="true" className="h-6 w-6 sm:h-10 sm:w-10" /> : <Menu aria-hidden="true" className="h-6 w-6 sm:h-10 sm:w-10" />}
+          </button>
+        </div>
       </div>
 
       {isMenuOpen && (
