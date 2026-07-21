@@ -33,7 +33,7 @@ const services = [
 
 export function Hero() {
   return (
-    <section className="relative isolate min-h-[800px] overflow-hidden bg-[#f8fbfe] lg:min-h-[800px]">
+    <section className="relative isolate overflow-hidden bg-[#f8fbfe] lg:min-h-200">
       <Image
         src={heroImage}
         alt="Plombier réparant une installation sous un évier"
@@ -45,7 +45,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 hidden bg-[linear-gradient(90deg,#fff_0%,rgba(255,255,255,0.98)_22%,rgba(255,255,255,0.76)_39%,rgba(255,255,255,0.1)_58%,rgba(255,255,255,0)_100%)] lg:block" />
 
       <div className="mx-auto max-w-[1270px] px-5 pt-10 sm:px-8 lg:px-0 lg:pt-[58px]">
-        <div className="relative min-h-[600px] lg:min-h-[580px]">
+        <div className="relative lg:min-h-145">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -155,7 +155,7 @@ export function Hero() {
           </p>
         </motion.div>
 
-        <div className="relative z-10 mt-10 grid grid-cols-2 gap-x-4 gap-y-5 rounded-2xl bg-white px-5 py-5 shadow-[0_18px_45px_rgba(9,42,83,0.12)] sm:grid-cols-4 lg:mt-10 lg:h-[86px] lg:grid-cols-4 lg:gap-0 lg:px-6 lg:py-0 lg:divide-x lg:divide-[#e1e9f2]">
+        <div className="relative z-10 mt-10 grid grid-cols-2 gap-x-4 gap-y-5 rounded-2xl bg-white px-5 py-5 shadow-[0_18px_45px_rgba(9,42,83,0.12)] sm:grid-cols-4 lg:mt-10 lg:h-[86px] lg:gap-0 lg:px-6 lg:py-0 lg:divide-x lg:divide-[#e1e9f2]">
           {services.map(({ icon: Icon, title, subtitle }, index) => (
             <motion.div
               key={title}

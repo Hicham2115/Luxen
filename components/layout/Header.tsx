@@ -19,7 +19,7 @@ export function Header() {
 
   return (
     <header className="relative z-50 bg-white">
-      <div className="mx-auto flex h-20 max-w-[1270px] items-center justify-between gap-4 px-5 sm:px-8 lg:h-[104px] lg:px-0">
+      <div className="mx-auto flex h-20 max-w-[1270px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-0">
         <Link href="/" className="flex items-center gap-3" aria-label="Luxen, accueil">
           <span className="relative flex h-11 w-11 items-center justify-center text-sky-500">
             <Droplet aria-hidden="true" strokeWidth={2.5} className="h-11 w-11" />
