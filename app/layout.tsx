@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { LenisProvider } from "@/components/LenisProvider";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import { Providers } from "@/app/providers";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,11 +20,14 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
-        <LoadingScreen />
-        <LenisProvider>
-          <Header />
-          {children}
-        </LenisProvider>
+        <Providers>
+          <LoadingScreen />
+          <LenisProvider>
+            <Header />
+            {children}
+          </LenisProvider>
+          <Toaster position="top-right" richColors />
+        </Providers>
       </body>
     </html>
   );

@@ -4,6 +4,8 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Process } from "@/components/Process";
 import { About } from "@/components/About";
 import { Testimonials } from "@/components/Testimonials";
+import { FAQ } from "@/components/FAQ";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Process />
       <About />
       <Testimonials />
+      <FAQ />
+      <Contact />
     </main>
   );
 }
