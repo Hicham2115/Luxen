@@ -143,7 +143,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
-          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-amber-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(245,158,11,0.32)] lg:block"
+          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-sky-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(14,165,233,0.28)] lg:block"
         >
           <p className="text-[42px] font-extrabold leading-none tracking-tight">
             10+
