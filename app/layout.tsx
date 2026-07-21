@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/LenisProvider";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { Providers } from "@/app/providers";
@@ -25,6 +26,7 @@ export default function RootLayout({
           <LenisProvider>
             <Header />
             {children}
+            <Footer />
           </LenisProvider>
           <Toaster position="top-right" richColors />
         </Providers>
