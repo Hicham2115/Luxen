@@ -57,7 +57,7 @@ export function Hero() {
               <br />
               en plomberie,
               <br />
-              <span className="text-sky-500">à votre service</span>
+              <span className="text-marino-500">à votre service</span>
             </h1>
             <p className="mx-auto mt-6 max-w-[620px] text-[clamp(1.05rem,2.8vw,1.65rem)] leading-[1.6] text-[#45618d] lg:mx-0 lg:mt-5 lg:max-w-[480px] lg:text-[18px]">
               Des solutions de plomberie rapides, fiables et durables pour votre
@@ -73,7 +73,7 @@ export function Hero() {
                   transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 + index * 0.1 }}
                   className="flex min-h-[118px] flex-col items-center justify-center gap-2 rounded-2xl border border-[#e7edf5] bg-white px-1.5 text-center shadow-[0_8px_22px_rgba(7,47,93,0.06)] sm:min-h-[150px] sm:px-3 lg:min-h-[108px] lg:rounded-none lg:border-0 lg:border-r lg:bg-transparent lg:shadow-none lg:last:border-r-0"
                 >
-                  <span className="flex h-10 w-10 items-center justify-center text-sky-500 sm:h-16 sm:w-16 lg:rounded-xl lg:bg-white lg:shadow-[0_10px_22px_rgba(7,47,93,0.06)]">
+                  <span className="flex h-10 w-10 items-center justify-center text-marino-500 sm:h-16 sm:w-16 lg:rounded-xl lg:bg-white lg:shadow-[0_10px_22px_rgba(7,47,93,0.06)]">
                     <Icon
                       aria-hidden="true"
                       strokeWidth={1.8}
@@ -97,7 +97,7 @@ export function Hero() {
                 href="#contact"
                 className={cn(
                   buttonVariants({ size: "lg" }),
-                  "h-16 w-full gap-3 rounded-2xl bg-sky-500 px-7 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-sky-600 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px]",
+                  "h-16 w-full gap-3 rounded-2xl bg-marino-500 px-7 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-marino-600 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px]",
                 )}
               >
                 Demander un devis{" "}
@@ -107,13 +107,13 @@ export function Hero() {
                 href="#services"
                 className={cn(
                   buttonVariants({ variant: "outline", size: "lg" }),
-                  "h-16 w-full gap-3 rounded-2xl border-[#dce4ef] bg-white px-6 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-[#09245a] shadow-[0_8px_20px_rgba(9,42,83,0.1)] hover:bg-sky-50 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px] lg:shadow-sm",
+                  "h-16 w-full gap-3 rounded-2xl border-[#dce4ef] bg-white px-6 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-[#09245a] shadow-[0_8px_20px_rgba(9,42,83,0.1)] hover:bg-marino-50 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px] lg:shadow-sm",
                 )}
               >
-                <span className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-sky-500">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-marino-500">
                   <Play
                     aria-hidden="true"
-                    className="ml-0.5 h-3 w-3 fill-sky-500 text-sky-500"
+                    className="ml-0.5 h-3 w-3 fill-marino-500 text-marino-500"
                   />
                 </span>
                 Découvrir nos services
@@ -139,7 +139,7 @@ export function Hero() {
             style={{ objectPosition: "72% center" }}
           />
 
-          <div className="absolute bottom-5 left-5 w-28 rounded-2xl bg-sky-500 px-3 py-4 text-center text-white shadow-[0_12px_28px_rgba(14,165,233,0.28)] sm:bottom-7 sm:left-7 sm:w-42 sm:px-4 sm:py-5">
+          <div className="absolute bottom-5 left-5 w-28 rounded-2xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_12px_28px_rgba(14,165,233,0.28)] sm:bottom-7 sm:left-7 sm:w-42 sm:px-4 sm:py-5">
             <p className="text-[30px] font-extrabold leading-none tracking-tight sm:text-[48px]">
               10+
             </p>
@@ -155,7 +155,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
-          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-sky-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(14,165,233,0.28)] lg:block"
+          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(14,165,233,0.28)] lg:block"
         >
           <p className="text-[42px] font-extrabold leading-none tracking-tight">
             10+
@@ -175,9 +175,9 @@ export function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
-              className="group flex items-center gap-3 transition-colors duration-300 hover:bg-sky-50 lg:px-9 first:pl-4 last:pr-3"
+              className="group flex items-center gap-3 transition-colors duration-300 hover:bg-marino-50 lg:px-9 first:pl-4 last:pr-3"
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center text-sky-500 transition-transform duration-300 group-hover:scale-110">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center text-marino-500 transition-transform duration-300 group-hover:scale-110">
                 <Icon
                   aria-hidden="true"
                   strokeWidth={1.8}

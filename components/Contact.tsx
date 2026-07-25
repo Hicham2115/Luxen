@@ -56,7 +56,7 @@ function fieldError(errors: unknown[]): string | undefined {
 }
 
 const inputClassName =
-  "h-13 rounded-xl border-[#e1e9f2] bg-[#f8fbfe] px-4 text-[15px] text-[#06265a] shadow-none focus-visible:border-sky-500 focus-visible:bg-white focus-visible:ring-4 focus-visible:ring-sky-500/15 aria-invalid:border-red-400 aria-invalid:ring-red-400/15";
+  "h-13 rounded-xl border-[#e1e9f2] bg-[#f8fbfe] px-4 text-[15px] text-[#06265a] shadow-none focus-visible:border-marino-500 focus-visible:bg-white focus-visible:ring-4 focus-visible:ring-marino-500/15 aria-invalid:border-red-400 aria-invalid:ring-red-400/15";
 
 export function Contact() {
   const mutation = useMutation({
@@ -102,11 +102,11 @@ export function Contact() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-[720px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-sky-500 before:h-px before:w-11 before:bg-sky-500 after:h-px after:w-11 after:bg-sky-500">
+          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-marino-500 after:h-px after:w-11 after:bg-marino-500">
             Contactez-nous
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold leading-[1.15] tracking-[-0.055em] text-[#06265a] sm:text-[52px]">
-            Discutons de <span className="text-sky-500">votre projet</span>
+            Discutons de <span className="text-marino-500">votre projet</span>
           </h2>
           <p className="mx-auto mt-5 max-w-[560px] text-[17px] leading-[1.7] text-[#4b638c]">
             Une question, un devis ou une urgence de plomberie ? Écrivez-nous,
@@ -132,7 +132,7 @@ export function Contact() {
               <h3 className="mt-6 text-[26px] font-extrabold leading-[1.2] tracking-[-0.03em]">
                 Parlons de votre projet
               </h3>
-              <p className="mt-3 max-w-[340px] text-[15px] leading-[1.7] text-sky-100">
+              <p className="mt-3 max-w-[340px] text-[15px] leading-[1.7] text-marino-100">
                 Remplissez le formulaire ou contactez-nous directement, nous
                 sommes disponibles à tout moment pour vos urgences.
               </p>
@@ -146,7 +146,7 @@ export function Contact() {
                       <Icon aria-hidden="true" className="h-5 w-5" />
                     </span>
                     <div className="min-w-0">
-                      <p className="text-[13px] text-sky-100">{label}</p>
+                      <p className="text-[13px] text-marino-100">{label}</p>
                       <p className="truncate text-[15px] font-semibold">{value}</p>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ export function Contact() {
                       type="submit"
                       disabled={!canSubmit || pending}
                       size="lg"
-                      className="h-14 w-full gap-3 rounded-xl bg-sky-500 text-[16px] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-sky-600 disabled:opacity-70"
+                      className="h-14 w-full gap-3 rounded-xl bg-marino-500 text-[16px] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-marino-600 disabled:opacity-70"
                     >
                       {pending ? (
                         <>

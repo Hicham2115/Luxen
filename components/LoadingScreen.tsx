@@ -50,13 +50,13 @@ export function LoadingScreen() {
               scale: { duration: 1.6, repeat: Infinity, ease: "easeInOut" },
               opacity: { duration: 0.4, ease: "easeOut" },
             }}
-            className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-sky-500 text-white shadow-[0_10px_24px_rgba(14,165,233,0.35)]"
+            className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-marino-500 text-white shadow-[0_10px_24px_rgba(14,165,233,0.35)]"
           >
             <Droplet aria-hidden="true" className="h-9 w-9" />
             <Wrench
               aria-hidden="true"
               strokeWidth={2.4}
-              className="absolute -bottom-1 -right-1 h-5 w-5 rounded-full bg-white p-1 text-sky-500"
+              className="absolute -bottom-1 -right-1 h-5 w-5 rounded-full bg-white p-1 text-marino-500"
             />
           </motion.span>
 
@@ -69,9 +69,9 @@ export function LoadingScreen() {
             LUXEN
           </motion.span>
 
-          <div className="h-1 w-32 overflow-hidden rounded-full bg-sky-100">
+          <div className="h-1 w-32 overflow-hidden rounded-full bg-marino-100">
             <motion.div
-              className="h-full w-1/3 rounded-full bg-sky-500"
+              className="h-full w-1/3 rounded-full bg-marino-500"
               animate={{ x: ["-100%", "220%"] }}
               transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
             />

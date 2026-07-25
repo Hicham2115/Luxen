@@ -73,15 +73,15 @@ export function About() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative z-10 max-w-[600px] px-7 py-12 sm:px-12 lg:px-0 lg:py-15"
           >
-            <p className="flex items-center gap-3 text-[16px] font-bold uppercase text-sky-500 before:h-px before:w-7 before:bg-sky-500">
+            <p className="flex items-center gap-3 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-7 before:bg-marino-500">
               À propos de nous
             </p>
             <h2 className="mt-6 text-[38px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:text-[49px]">
               Une entreprise de plomberie
               <br className="hidden lg:block" />{" "}
-              <span className="text-sky-500">fiable et passionnée</span>
+              <span className="text-marino-500">fiable et passionnée</span>
             </h2>
-            <span className="mt-6 block h-1 w-13 rounded-full bg-sky-500" />
+            <span className="mt-6 block h-1 w-13 rounded-full bg-marino-500" />
             <p className="mt-6 max-w-[550px] text-[16px] leading-[1.72] text-[#4b638c]">
               Depuis plus de 10 ans, nous mettons notre expertise au service des
               particuliers et des professionnels. Notre mission est simple :
@@ -98,7 +98,7 @@ export function About() {
                   transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 + index * 0.1 }}
                   className="flex gap-4"
                 >
-                  <span className="flex h-[70px] w-[70px] shrink-0 items-center justify-center rounded-xl bg-white text-sky-500 shadow-[0_7px_18px_rgba(11,49,96,0.1)]">
+                  <span className="flex h-[70px] w-[70px] shrink-0 items-center justify-center rounded-xl bg-white text-marino-500 shadow-[0_7px_18px_rgba(11,49,96,0.1)]">
                     <Icon
                       aria-hidden="true"
                       strokeWidth={1.65}
@@ -138,7 +138,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
-              className="absolute bottom-6 left-1/2 w-[min(370px,calc(100%-2rem))] -translate-x-1/2 rounded-2xl bg-sky-500 px-6 py-5 text-white shadow-[0_14px_30px_rgba(14,165,233,0.3)] lg:bottom-10 lg:left-[58%] lg:w-[400px]"
+              className="absolute bottom-6 left-1/2 w-[min(370px,calc(100%-2rem))] -translate-x-1/2 rounded-2xl bg-marino-500 px-6 py-5 text-white shadow-[0_14px_30px_rgba(14,165,233,0.3)] lg:bottom-10 lg:left-[58%] lg:w-[400px]"
             >
               <div className="flex items-center gap-4">
                 <Award

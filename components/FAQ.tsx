@@ -93,18 +93,18 @@ export function FAQ() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mx-auto max-w-[700px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-sky-500 before:h-px before:w-11 before:bg-sky-500 after:h-px after:w-11 after:bg-sky-500">
+          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-marino-500 after:h-px after:w-11 after:bg-marino-500">
             Foire aux questions
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
-            Vos questions, <span className="text-sky-500">nos réponses</span>
+            Vos questions, <span className="text-marino-500">nos réponses</span>
           </h2>
           <p className="mx-auto mt-4 max-w-[560px] text-[17px] leading-[1.65] text-[#4b638c]">
             Retrouvez les réponses aux questions les plus fréquentes. Si vous ne
             trouvez pas votre réponse,{" "}
             <a
               href="#contact"
-              className="font-semibold text-sky-500 hover:text-sky-600"
+              className="font-semibold text-marino-500 hover:text-marino-600"
             >
               contactez-nous !
             </a>
@@ -126,7 +126,7 @@ export function FAQ() {
                     ease: "easeOut",
                     delay: index * 0.06,
                   }}
-                  className="rounded-2xl border border-[#e7eef5] bg-white shadow-[0_6px_16px_rgba(11,49,96,0.06)] transition-colors duration-300 hover:border-sky-200"
+                  className="rounded-2xl border border-[#e7eef5] bg-white shadow-[0_6px_16px_rgba(11,49,96,0.06)] transition-colors duration-300 hover:border-marino-200"
                 >
                   <button
                     type="button"
@@ -134,7 +134,7 @@ export function FAQ() {
                     aria-expanded={isOpen}
                     className="flex w-full items-center gap-4 px-6 py-5 text-left"
                   >
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sky-50 text-sky-500">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-marino-50 text-marino-500">
                       <Icon
                         aria-hidden="true"
                         strokeWidth={1.8}
@@ -144,7 +144,7 @@ export function FAQ() {
                     <span className="flex-1 text-[17px] font-bold text-[#071e51]">
                       {question}
                     </span>
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center text-sky-500">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center text-marino-500">
                       {isOpen ? (
                         <Minus aria-hidden="true" className="h-5 w-5" />
                       ) : (
@@ -189,13 +189,13 @@ export function FAQ() {
               />
             </div>
             {/* <div className="relative z-10 -mt-16 w-[calc(100%-1.5rem)] rounded-2xl bg-[#f3f9ff] px-7 py-7 text-center shadow-[0_14px_34px_rgba(9,42,83,0.14)]">
-              <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-sky-100 text-sky-500">
+              <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-marino-100 text-marino-500">
                 <Phone aria-hidden="true" strokeWidth={1.8} className="h-6 w-6" />
               </span>
               <h3 className="mt-4 text-[19px] font-bold leading-[1.3] text-[#071e51]">
                 Une autre question ?
                 <br />
-                <span className="text-sky-500">Nous sommes là pour vous.</span>
+                <span className="text-marino-500">Nous sommes là pour vous.</span>
               </h3>
               <p className="mx-auto mt-3 max-w-[320px] text-[14px] leading-[1.6] text-[#4b638c]">
                 Notre équipe est disponible 24h/24 et 7j/7 pour répondre à
@@ -203,14 +203,14 @@ export function FAQ() {
               </p>
               <a
                 href="tel:0612345678"
-                className="mx-auto mt-5 inline-flex h-12 items-center gap-3 rounded-lg bg-sky-500 px-7 text-[16px] font-semibold text-white shadow-[0_8px_18px_rgba(14,165,233,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-600 hover:shadow-[0_12px_24px_rgba(14,165,233,0.32)]"
+                className="mx-auto mt-5 inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[16px] font-semibold text-white shadow-[0_8px_18px_rgba(14,165,233,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(14,165,233,0.32)]"
               >
                 <Phone aria-hidden="true" className="h-5 w-5" />
                 06 12 34 56 78
               </a>
               <a
                 href="#contact"
-                className="mt-3 flex items-center justify-center gap-2 text-[14px] font-semibold text-sky-500 hover:text-sky-600"
+                className="mt-3 flex items-center justify-center gap-2 text-[14px] font-semibold text-marino-500 hover:text-marino-600"
               >
                 <ArrowRight aria-hidden="true" className="h-4 w-4" />
                 Nous contacter
@@ -228,7 +228,7 @@ export function FAQ() {
         >
           {trustPoints.map(({ icon: Icon, title, text }) => (
             <div key={title} className="flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-sky-500 shadow-sm">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-marino-500 shadow-sm">
                 <Icon
                   aria-hidden="true"
                   strokeWidth={1.8}

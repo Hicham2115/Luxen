@@ -114,13 +114,13 @@ export function Testimonials() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-[800px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-sky-500 before:h-px before:w-11 before:bg-sky-500 after:h-px after:w-11 after:bg-sky-500">
+          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-marino-500 after:h-px after:w-11 after:bg-marino-500">
             Avis de nos clients
           </p>
           <h2 className="mt-5 text-[39px] font-extrabold leading-[1.13] tracking-[-0.055em] text-[#07255a] sm:text-[54px]">
             La satisfaction de nos clients
             <br className="hidden sm:block" /> est notre{" "}
-            <span className="text-sky-500">plus belle réussite</span>
+            <span className="text-marino-500">plus belle réussite</span>
           </h2>
           <p className="mx-auto mt-6 max-w-[590px] text-[17px] leading-[1.7] text-[#4b638c]">
             Découvrez les témoignages de nos clients satisfaits qui nous ont
@@ -133,7 +133,7 @@ export function Testimonials() {
             type="button"
             onClick={showPrevious}
             aria-label="Afficher les avis précédents"
-            className="absolute left-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-sky-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:-translate-x-1 hover:bg-sky-50 2xl:flex"
+            className="absolute left-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:-translate-x-1 hover:bg-marino-50 2xl:flex"
           >
             <ArrowLeft className="h-7 w-7" strokeWidth={2.3} />
           </button>
@@ -141,7 +141,7 @@ export function Testimonials() {
             type="button"
             onClick={showNext}
             aria-label="Afficher les avis suivants"
-            className="absolute right-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-sky-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:translate-x-1 hover:bg-sky-50 2xl:flex"
+            className="absolute right-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:translate-x-1 hover:bg-marino-50 2xl:flex"
           >
             <ArrowRight className="h-7 w-7" strokeWidth={2.3} />
           </button>
@@ -154,14 +154,14 @@ export function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.07 }}
-                className="flex min-h-[430px] flex-col rounded-[19px] border border-[#e7eef5] bg-white px-7 py-7 shadow-[0_10px_24px_rgba(10,52,104,.08)] transition-all duration-300 hover:-translate-y-2 hover:border-sky-200 hover:shadow-[0_18px_35px_rgba(12,87,158,0.15)] sm:min-h-[450px]"
+                className="flex min-h-[430px] flex-col rounded-[19px] border border-[#e7eef5] bg-white px-7 py-7 shadow-[0_10px_24px_rgba(10,52,104,.08)] transition-all duration-300 hover:-translate-y-2 hover:border-marino-200 hover:shadow-[0_18px_35px_rgba(12,87,158,0.15)] sm:min-h-[450px]"
               >
                 <Quote
                   aria-hidden="true"
-                  className="h-8 w-8 fill-sky-500 text-sky-500"
+                  className="h-8 w-8 fill-marino-500 text-marino-500"
                   strokeWidth={2}
                 />
-                <div className="mt-5 flex gap-1 text-sky-500">
+                <div className="mt-5 flex gap-1 text-marino-500">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Star
                       key={starIndex}
@@ -189,13 +189,13 @@ export function Testimonials() {
                       {testimonial.name}
                       <BadgeCheck
                         aria-label="Client vérifié"
-                        className="h-[18px] w-[18px] shrink-0 fill-sky-500 text-white"
+                        className="h-[18px] w-[18px] shrink-0 fill-marino-500 text-white"
                       />
                     </p>
                     <p className="mt-1 text-[15px] text-[#4b638c]">
                       {testimonial.city}
                     </p>
-                    <p className="mt-1 text-[15px] font-medium text-sky-500">
+                    <p className="mt-1 text-[15px] font-medium text-marino-500">
                       {testimonial.type}
                     </p>
                   </div>
@@ -209,7 +209,7 @@ export function Testimonials() {
               type="button"
               onClick={showPrevious}
               aria-label="Afficher les avis précédents"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-sky-100 bg-white text-sky-500 shadow-sm"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-marino-100 bg-white text-marino-500 shadow-sm"
             >
               <ArrowLeft className="h-5 w-5" />
             </button>
@@ -217,7 +217,7 @@ export function Testimonials() {
               type="button"
               onClick={showNext}
               aria-label="Afficher les avis suivants"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-sky-100 bg-white text-sky-500 shadow-sm"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-marino-100 bg-white text-marino-500 shadow-sm"
             >
               <ArrowRight className="h-5 w-5" />
             </button>

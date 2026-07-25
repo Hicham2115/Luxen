@@ -62,8 +62,8 @@ export function Footer() {
         </svg>
       </div>
 
-      <div className="pointer-events-none absolute -right-24 -top-10 h-80 w-80 rounded-full bg-sky-500/10 blur-3xl" />
-      <div className="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-sky-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-24 -top-10 h-80 w-80 rounded-full bg-marino-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-marino-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-[1270px] px-5 sm:px-8 lg:px-0">
         <motion.div
@@ -77,7 +77,7 @@ export function Footer() {
             <h3 className="text-[26px] font-extrabold leading-[1.2] tracking-[-0.03em] sm:text-[30px]">
               Une urgence plomberie ?
             </h3>
-            <p className="mt-2 max-w-[420px] text-[15px] leading-[1.6] text-sky-100">
+            <p className="mt-2 max-w-[420px] text-[15px] leading-[1.6] text-marino-100">
               Notre équipe intervient 24h/24 et 7j/7, où que vous soyez.
             </p>
           </div>
@@ -85,7 +85,7 @@ export function Footer() {
             href="tel:0612345678"
             className="inline-flex h-14 shrink-0 items-center gap-3 rounded-xl bg-white px-7 text-[16px] font-semibold text-[#06265a] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
           >
-            <Phone aria-hidden="true" className="h-5 w-5 text-sky-500" />
+            <Phone aria-hidden="true" className="h-5 w-5 text-marino-500" />
             06 123 456 78
           </a>
         </motion.div>
@@ -93,7 +93,7 @@ export function Footer() {
         <div className="mt-16 grid gap-12 pb-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.9fr_1.1fr_1fr]">
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <span className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-sky-400">
+              <span className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-marino-400">
                 <Droplet aria-hidden="true" strokeWidth={2.5} className="h-6 w-6" />
                 <Wrench
                   aria-hidden="true"
@@ -103,7 +103,7 @@ export function Footer() {
               </span>
               <span className="text-[22px] font-extrabold tracking-tight">LUXEN</span>
             </Link>
-            <p className="mt-5 max-w-[300px] text-[14px] leading-[1.75] text-sky-100/80">
+            <p className="mt-5 max-w-[300px] text-[14px] leading-[1.75] text-marino-100/80">
               Votre expert en plomberie, à votre service. Des solutions
               rapides, fiables et durables pour votre confort au quotidien.
             </p>
@@ -113,7 +113,7 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors duration-300 hover:bg-sky-500"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors duration-300 hover:bg-marino-500"
                 >
                   <Icon aria-hidden="true" className="h-[18px] w-[18px]" />
                 </a>
@@ -128,7 +128,7 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-[14px] text-sky-100/80 transition-colors hover:text-white"
+                    className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
                   >
                     {link.label}
                   </a>
@@ -144,7 +144,7 @@ export function Footer() {
                 <li key={service}>
                   <a
                     href="#services"
-                    className="text-[14px] text-sky-100/80 transition-colors hover:text-white"
+                    className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
                   >
                     {service}
                   </a>
@@ -158,18 +158,18 @@ export function Footer() {
             <ul className="mt-5 space-y-4">
               {contactRows.map(({ icon: Icon, text, href }) => (
                 <li key={text} className="flex items-center gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-sky-400">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-marino-400">
                     <Icon aria-hidden="true" className="h-4 w-4" />
                   </span>
                   {href ? (
                     <a
                       href={href}
-                      className="text-[14px] text-sky-100/80 transition-colors hover:text-white"
+                      className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
                     >
                       {text}
                     </a>
                   ) : (
-                    <span className="text-[14px] text-sky-100/80">{text}</span>
+                    <span className="text-[14px] text-marino-100/80">{text}</span>
                   )}
                 </li>
               ))}
@@ -177,7 +177,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-[13px] text-sky-100/60 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-[13px] text-marino-100/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Luxen. Tous droits réservés.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-white">
