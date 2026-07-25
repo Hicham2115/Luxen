@@ -97,7 +97,7 @@ export function Hero() {
                 href="#contact"
                 className={cn(
                   buttonVariants({ size: "lg" }),
-                  "h-16 w-full gap-3 rounded-2xl bg-marino-500 px-7 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-white shadow-[0_12px_26px_rgba(14,165,233,0.24)] hover:bg-marino-600 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px]",
+                  "h-16 w-full gap-3 rounded-2xl bg-marino-500 px-7 text-[clamp(1rem,2.5vw,1.35rem)] font-semibold text-white shadow-[0_12px_26px_rgba(20,40,80,0.24)] hover:bg-marino-600 lg:h-[55px] lg:w-auto lg:rounded-xl lg:text-[16px]",
                 )}
               >
                 Demander un devis{" "}
@@ -139,7 +139,7 @@ export function Hero() {
             style={{ objectPosition: "72% center" }}
           />
 
-          <div className="absolute bottom-5 left-5 w-28 rounded-2xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_12px_28px_rgba(14,165,233,0.28)] sm:bottom-7 sm:left-7 sm:w-42 sm:px-4 sm:py-5">
+          <div className="absolute bottom-5 left-5 w-28 rounded-2xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_12px_28px_rgba(20,40,80,0.28)] sm:bottom-7 sm:left-7 sm:w-42 sm:px-4 sm:py-5">
             <p className="text-[30px] font-extrabold leading-none tracking-tight sm:text-[48px]">
               10+
             </p>
@@ -155,7 +155,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
-          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(14,165,233,0.28)] lg:block"
+          className="absolute bottom-[143px] left-1/2 z-10 hidden w-[124px] -translate-x-[124px] rounded-xl bg-marino-500 px-3 py-4 text-center text-white shadow-[0_14px_30px_rgba(20,40,80,0.28)] lg:block"
         >
           <p className="text-[42px] font-extrabold leading-none tracking-tight">
             10+

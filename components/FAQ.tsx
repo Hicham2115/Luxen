@@ -93,7 +93,7 @@ export function FAQ() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mx-auto max-w-[700px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-marino-500 after:h-px after:w-11 after:bg-marino-500">
+          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-gold-500 after:h-px after:w-11 after:bg-gold-500">
             Foire aux questions
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
@@ -203,7 +203,7 @@ export function FAQ() {
               </p>
               <a
                 href="tel:0612345678"
-                className="mx-auto mt-5 inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[16px] font-semibold text-white shadow-[0_8px_18px_rgba(14,165,233,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(14,165,233,0.32)]"
+                className="mx-auto mt-5 inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[16px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"
               >
                 <Phone aria-hidden="true" className="h-5 w-5" />
                 06 12 34 56 78

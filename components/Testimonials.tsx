@@ -114,7 +114,7 @@ export function Testimonials() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-[800px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-marino-500 after:h-px after:w-11 after:bg-marino-500">
+          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-gold-500 after:h-px after:w-11 after:bg-gold-500">
             Avis de nos clients
           </p>
           <h2 className="mt-5 text-[39px] font-extrabold leading-[1.13] tracking-[-0.055em] text-[#07255a] sm:text-[54px]">
@@ -161,7 +161,7 @@ export function Testimonials() {
                   className="h-8 w-8 fill-marino-500 text-marino-500"
                   strokeWidth={2}
                 />
-                <div className="mt-5 flex gap-1 text-marino-500">
+                <div className="mt-5 flex gap-1 text-gold-500">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Star
                       key={starIndex}

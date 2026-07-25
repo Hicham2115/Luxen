@@ -49,6 +49,9 @@
   --color-royal-100: #dae2f6;
   --color-royal-500: #2f5fcf;
   --color-royal-600: #2851b0;
+  --color-gold-400: #f7c948;
+  --color-gold-500: #f5b700;
+  --color-gold-600: #d89c00;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);

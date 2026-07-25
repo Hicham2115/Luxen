@@ -31,7 +31,7 @@ export function Services() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="flex items-center justify-center gap-5 text-[16px] font-bold uppercase tracking-tight text-marino-500 before:h-px before:w-15 before:bg-marino-300 after:h-px after:w-15 after:bg-marino-300">Nos services</p>
+          <p className="flex items-center justify-center gap-5 text-[16px] font-bold uppercase tracking-tight text-marino-500 before:h-px before:w-15 before:bg-gold-500 after:h-px after:w-15 after:bg-gold-500">Nos services</p>
           <h2 className="mt-4 text-[34px] font-extrabold tracking-[-0.045em] text-[#07265b] sm:text-[42px]">
             Des solutions de <span className="text-marino-500">plomberie</span> pour tous vos besoins
           </h2>
@@ -74,7 +74,7 @@ export function Services() {
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-marino-500 text-white"><Phone aria-hidden="true" className="h-5 w-5" /></span>
             <div><p className="text-[17px] font-bold text-[#092157]">Besoin d’une intervention rapide ?</p><p className="text-[14px] text-[#4b638c]">Nous sommes disponibles 24h/24 et 7j/7.</p></div>
           </div>
-          <a href="tel:0612345678" className="inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-8 text-[18px] font-semibold text-white shadow-[0_8px_18px_rgba(14,165,233,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(14,165,233,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />06 123 456 78</a>
+          <a href="tel:0612345678" className="inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-8 text-[18px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />06 123 456 78</a>
           <div className="flex items-center gap-3 border-t border-marino-200 pt-4 sm:border-l sm:border-t-0 sm:pl-12 sm:pt-0">
             <ShieldCheck aria-hidden="true" strokeWidth={1.6} className="h-9 w-9 text-marino-500" />
             <p className="text-[14px] leading-[1.45] text-[#4b638c]"><strong className="block text-[#092157]">Devis gratuit</strong>et sans engagement</p>

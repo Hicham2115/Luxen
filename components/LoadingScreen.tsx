@@ -50,7 +50,7 @@ export function LoadingScreen() {
               scale: { duration: 1.6, repeat: Infinity, ease: "easeInOut" },
               opacity: { duration: 0.4, ease: "easeOut" },
             }}
-            className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-marino-500 text-white shadow-[0_10px_24px_rgba(14,165,233,0.35)]"
+            className="relative flex h-16 w-16 items-center justify-center rounded-2xl bg-marino-500 text-white shadow-[0_10px_24px_rgba(20,40,80,0.35)]"
           >
             <Droplet aria-hidden="true" className="h-9 w-9" />
             <Wrench

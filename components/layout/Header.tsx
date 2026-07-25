@@ -50,7 +50,7 @@ export function Header() {
           href="tel:0612345678"
           className={cn(
             buttonVariants({ size: "lg" }),
-            "hidden h-[53px] min-w-[220px] gap-3 rounded-xl bg-marino-500 px-5 text-[17px] font-semibold text-white shadow-[0_12px_28px_rgba(14,165,233,0.2)] hover:bg-marino-600 lg:inline-flex"
+            "hidden h-[53px] min-w-[220px] gap-3 rounded-xl bg-marino-500 px-5 text-[17px] font-semibold text-white shadow-[0_12px_28px_rgba(20,40,80,0.28)] hover:bg-marino-600 lg:inline-flex"
           )}
         >
           <Phone aria-hidden="true" className="h-5 w-5" />
@@ -61,7 +61,7 @@ export function Header() {
           <a
             href="tel:0612345678"
             aria-label="Appelez-nous"
-            className="flex h-12 w-12 items-center justify-center rounded-2xl bg-marino-500 text-white shadow-[0_10px_22px_rgba(14,165,233,0.28)] sm:h-[88px] sm:w-[88px] sm:rounded-[20px]"
+            className="flex h-12 w-12 items-center justify-center rounded-2xl bg-marino-500 text-white shadow-[0_10px_22px_rgba(20,40,80,0.28)] sm:h-[88px] sm:w-[88px] sm:rounded-[20px]"
           >
             <Phone aria-hidden="true" className="h-5 w-5 sm:h-9 sm:w-9" />
           </a>
