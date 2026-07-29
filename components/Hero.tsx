@@ -36,7 +36,7 @@ export function Hero() {
             Su Experto en
             <br />
             Fontanería y Calefacción,
-            <br />
+            <br /> 
             a Su Servicio
           </h1>
           <p className="mt-6 max-w-120 text-[clamp(1.05rem,2vw,1.25rem)] leading-[1.6] text-white/80">
