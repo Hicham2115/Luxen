@@ -26,7 +26,7 @@ export function WhyChooseUs() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative z-10 max-w-[780px] pt-4"
           >
-            <p className="flex items-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-gold-500 after:h-px after:w-11 after:bg-gold-500">Pourquoi nous choisir</p>
+            <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Pourquoi nous choisir</p>
             <h2 className="mt-6 text-[40px] font-extrabold leading-[1.16] tracking-[-0.055em] text-[#06265a] sm:text-[53px]">
               La qualité et votre satisfaction<br className="hidden lg:block" /> sont <span className="text-marino-500">notre priorité</span>
             </h2>
@@ -69,7 +69,7 @@ export function WhyChooseUs() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mt-6 flex flex-col items-center justify-between gap-6 rounded-xl bg-[#edf8ff] px-7 py-5 text-center lg:flex-row lg:text-left">
           <div className="flex items-center gap-4"><span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-white text-marino-500"><ShieldCheck aria-hidden="true" className="h-9 w-9" /></span><div><p className="text-[19px] font-bold text-[#092157]">Votre confiance est notre plus grande réussite.</p><p className="text-[15px] text-[#4b638c]">Des centaines de clients satisfaits nous recommandent.</p></div></div>
-          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-12 lg:py-0"><div className="flex text-amber-500">{Array.from({ length: 5 }).map((_, index) => <Star key={index} aria-hidden="true" className="h-6 w-6 fill-current" />)}</div><p className="text-[14px] leading-[1.35] text-[#4b638c]"><strong className="block text-[#092157]">+10 ans d’expérience</strong>dans la plomberie</p></div>
+          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-12 lg:py-0"><div className="flex text-gold-500">{Array.from({ length: 5 }).map((_, index) => <Star key={index} aria-hidden="true" className="h-6 w-6 fill-current" />)}</div><p className="text-[14px] leading-[1.35] text-[#4b638c]"><strong className="block text-[#092157]">+10 ans d’expérience</strong>dans la plomberie</p></div>
           <a href="#contact" className="inline-flex h-14 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[17px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />Demander un devis</a>
         </motion.div>
       </div>

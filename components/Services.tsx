@@ -31,7 +31,7 @@ export function Services() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="flex items-center justify-center gap-5 text-[16px] font-bold uppercase tracking-tight text-marino-500 before:h-px before:w-15 before:bg-gold-500 after:h-px after:w-15 after:bg-gold-500">Nos services</p>
+          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase tracking-tight text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Nos services</p>
           <h2 className="mt-4 text-[34px] font-extrabold tracking-[-0.045em] text-[#07265b] sm:text-[42px]">
             Des solutions de <span className="text-marino-500">plomberie</span> pour tous vos besoins
           </h2>

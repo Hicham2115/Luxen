@@ -25,7 +25,7 @@ export function Process() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="flex items-center justify-center gap-5 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-12 before:bg-gold-500 after:h-px after:w-12 after:bg-gold-500">Comment nous travaillons</p>
+          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Comment nous travaillons</p>
           <h2 className="mt-4 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[54px]">Un processus <span className="text-marino-500">simple</span> et efficace</h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[18px] leading-[1.55] text-[#4c638c]">Nous avons mis en place un processus clair pour garantir<br className="hidden sm:block" /> une expérience sans stress et des résultats impeccables.</p>
         </motion.div>

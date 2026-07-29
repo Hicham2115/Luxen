@@ -114,7 +114,8 @@ export function Testimonials() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-[800px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-gold-500 after:h-px after:w-11 after:bg-gold-500">
+          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             Avis de nos clients
           </p>
           <h2 className="mt-5 text-[39px] font-extrabold leading-[1.13] tracking-[-0.055em] text-[#07255a] sm:text-[54px]">

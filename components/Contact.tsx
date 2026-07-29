@@ -102,7 +102,8 @@ export function Contact() {
           transition={{ duration: 0.55 }}
           className="mx-auto max-w-[720px] text-center"
         >
-          <p className="flex items-center justify-center gap-4 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-11 before:bg-gold-500 after:h-px after:w-11 after:bg-gold-500">
+          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             Contactez-nous
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold leading-[1.15] tracking-[-0.055em] text-[#06265a] sm:text-[52px]">

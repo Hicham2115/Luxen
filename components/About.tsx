@@ -73,7 +73,8 @@ export function About() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative z-10 max-w-[600px] px-7 py-12 sm:px-12 lg:px-0 lg:py-15"
           >
-            <p className="flex items-center gap-3 text-[16px] font-bold uppercase text-marino-500 before:h-px before:w-7 before:bg-gold-500">
+            <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
+              <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
               À propos de nous
             </p>
             <h2 className="mt-6 text-[38px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:text-[49px]">

@@ -63,7 +63,7 @@ export function Footer() {
       </div>
 
       <div className="pointer-events-none absolute -right-24 -top-10 h-80 w-80 rounded-full bg-marino-500/10 blur-3xl" />
-      <div className="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-marino-500/10 blur-3xl" />
+      <div className="pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-gold-500/10 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-[1270px] px-5 sm:px-8 lg:px-0">
         <motion.div
