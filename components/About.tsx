@@ -17,7 +17,7 @@ const principles = [
   {
     icon: BadgeCheck,
     title: "Nuestra misión",
-    text: "Ofrecer un servicio de fontanería de calidad superior, respetando las normas y con una atención constante a la satisfacción del cliente.",
+    text: "Ofrecer un servicio de fontanería y calefacción de calidad superior, respetando las normas y con una atención constante a la satisfacción del cliente.",
   },
   {
     icon: Target,
@@ -78,7 +78,7 @@ export function About() {
               Sobre nosotros
             </p>
             <h2 className="mt-6 text-[38px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:text-[49px]">
-              Una empresa de fontanería
+              Una empresa de fontanería y calefacción
               <br className="hidden lg:block" />{" "}
               <span className="text-marino-500">fiable y apasionada</span>
             </h2>
@@ -86,8 +86,9 @@ export function About() {
             <p className="mt-6 max-w-[550px] text-[16px] leading-[1.72] text-[#4b638c]">
               Desde hace más de 10 años, ponemos nuestra experiencia al servicio
               de particulares y profesionales. Nuestra misión es simple:
-              ofrecer soluciones de fontanería duraderas, eficaces y adaptadas
-              a cada necesidad.
+              ofrecer soluciones de fontanería y calefacción duraderas,
+              eficaces y adaptadas a cada necesidad, con el mismo equipo de
+              principio a fin.
             </p>
             <div className="mt-7 space-y-5">
               {principles.map(({ icon: Icon, title, text }, index) => (

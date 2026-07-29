@@ -33,9 +33,9 @@ export function Services() {
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase tracking-tight text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Nuestros servicios</p>
           <h2 className="mt-4 text-[34px] font-extrabold tracking-[-0.045em] text-[#07265b] sm:text-[42px]">
-            Soluciones de <span className="text-marino-500">fontanería</span> para todas sus necesidades
+            Soluciones de <span className="text-marino-500">fontanería y calefacción</span> para todas sus necesidades
           </h2>
-          <p className="mx-auto mt-3 max-w-[620px] text-[17px] leading-[1.55] text-[#50678e]">Actuamos rápidamente para garantizar su confort<br className="hidden sm:block" /> y la calidad de sus instalaciones.</p>
+          <p className="mx-auto mt-3 max-w-[620px] text-[17px] leading-[1.55] text-[#50678e]">Combinamos experiencia y pasión para ofrecerle reparaciones,<br className="hidden sm:block" /> instalaciones y mantenimiento de fontanería de calidad.</p>
         </motion.div>
 
         <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

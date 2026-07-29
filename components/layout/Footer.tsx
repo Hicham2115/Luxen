@@ -17,6 +17,7 @@ import {
 const quickLinks = [
   { label: "Inicio", href: "#" },
   { label: "Nuestros servicios", href: "#services" },
+  { label: "Tarifas", href: "#pricing" },
   { label: "Sobre nosotros", href: "#about" },
   { label: "Opiniones de clientes", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },

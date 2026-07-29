@@ -91,6 +91,14 @@ export function Hero() {
                 Años de experiencia
               </span>
             </div>
+            <div className="flex items-center gap-4 rounded-full bg-white/10 py-2 pl-3 pr-6 backdrop-blur-sm">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500 text-[14px] font-extrabold text-[#06265a]">
+                1500+
+              </span>
+              <span className="whitespace-nowrap text-[14px] font-medium leading-[1.3] text-white">
+                Intervenciones realizadas
+              </span>
+            </div>
             <a
               href="https://wa.me/212612345678"
               target="_blank"

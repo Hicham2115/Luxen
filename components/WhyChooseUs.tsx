@@ -31,7 +31,7 @@ export function WhyChooseUs() {
               La calidad y su satisfacción<br className="hidden lg:block" /> son <span className="text-marino-500">nuestra prioridad</span>
             </h2>
             <span className="mt-7 block h-1 w-15 rounded-full bg-gold-500" />
-            <p className="mt-6 max-w-[600px] text-[17px] leading-[1.75] text-[#4b638c]">Ponemos nuestra experiencia y pasión al servicio de sus instalaciones de fontanería. Soluciones fiables, duraderas y un servicio al cliente impecable.</p>
+            <p className="mt-6 max-w-[600px] text-[17px] leading-[1.75] text-[#4b638c]">Ponemos nuestra experiencia y pasión al servicio de sus instalaciones de fontanería y calefacción. El mismo equipo, cualificado para ambos oficios, se ocupa de todo: soluciones fiables, duraderas y un servicio al cliente impecable.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
