@@ -35,13 +35,13 @@ export function Hero() {
           <h1 className="mt-6 text-[clamp(2.35rem,6vw,4rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-white">
             Su Experto en
             <br />
-            Fontanería, a Su
+            Fontanería y Calefacción,
             <br />
-            Servicio
+            a Su Servicio
           </h1>
           <p className="mt-6 max-w-120 text-[clamp(1.05rem,2vw,1.25rem)] leading-[1.6] text-white/80">
-            Soluciones de fontanería rápidas, fiables y duraderas para su
-            confort diario.
+            Soluciones de fontanería y calefacción rápidas, fiables y
+            duraderas para su confort diario.
           </p>
 
           <motion.div

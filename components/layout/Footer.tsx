@@ -104,8 +104,8 @@ export function Footer() {
               <span className="text-[22px] font-extrabold tracking-tight">LUXEN</span>
             </Link>
             <p className="mt-5 max-w-[300px] text-[14px] leading-[1.75] text-marino-100/80">
-              Su experto en fontanería, a su servicio. Soluciones
-              rápidas, fiables y duraderas para su confort diario.
+              Su experto en fontanería y calefacción, a su servicio.
+              Soluciones rápidas, fiables y duraderas para su confort diario.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map(({ icon: Icon, label, href }) => (
