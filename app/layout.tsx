@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Luxen", template: "%s | Luxen" },
-  description: "Votre expert en plomberie, à votre service.",
+  description: "Su experto en fontanería y calefacción, a su servicio.",
   openGraph: { type: "website" },
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="h-full antialiased">
+    <html lang="es" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <Providers>
           <LoadingScreen />

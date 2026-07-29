@@ -22,31 +22,31 @@ import { cn } from "@/lib/utils";
 import { api, getErrorMessage } from "@/lib/axios";
 
 const contactSchema = z.object({
-  name: z.string().min(2, "Le nom doit contenir au moins 2 caractères."),
-  email: z.string().email("Adresse e-mail invalide."),
+  name: z.string().min(2, "El nombre debe tener al menos 2 caracteres."),
+  email: z.string().email("Dirección de correo electrónico no válida."),
   phone: z.string().optional(),
   service: z.string().optional(),
   message: z
     .string()
-    .min(10, "Votre message doit contenir au moins 10 caractères."),
+    .min(10, "Su mensaje debe contener al menos 10 caracteres."),
 });
 
 type ContactInput = z.infer<typeof contactSchema>;
 
 const services = [
-  "Détection de fuite",
-  "Débouchage de canalisations",
-  "Chauffe-eau",
-  "Salle de bain",
-  "Urgence 24/7",
-  "Autre",
+  "Detección de fugas",
+  "Desatasco de tuberías",
+  "Calentador de agua",
+  "Baño",
+  "Urgencia 24/7",
+  "Otro",
 ];
 
 const contactDetails = [
-  { icon: Phone, label: "Téléphone", value: "06 123 456 78", href: "tel:0612345678" },
-  { icon: Mail, label: "E-mail", value: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
-  { icon: MapPin, label: "Zone d’intervention", value: "Casablanca & environs" },
-  { icon: Clock3, label: "Disponibilité", value: "24h/24, 7j/7" },
+  { icon: Phone, label: "Teléfono", value: "06 123 456 78", href: "tel:0612345678" },
+  { icon: Mail, label: "Correo electrónico", value: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
+  { icon: MapPin, label: "Zona de intervención", value: "Casablanca y alrededores" },
+  { icon: Clock3, label: "Disponibilidad", value: "24 horas, 7 días" },
 ];
 
 function fieldError(errors: unknown[]): string | undefined {
@@ -63,7 +63,7 @@ export function Contact() {
     mutationFn: (data: ContactInput) =>
       api.post("/api/contact", data).then((res) => res.data),
     onSuccess: () => {
-      toast.success("Message envoyé ! Nous vous répondons sous peu.");
+      toast.success("¡Mensaje enviado! Le responderemos en breve.");
       form.reset();
     },
     onError: (error) => {
@@ -82,7 +82,7 @@ export function Contact() {
     onSubmit: async ({ value }) => {
       const parsed = contactSchema.safeParse(value);
       if (!parsed.success) {
-        toast.error("Veuillez corriger les champs en surbrillance.");
+        toast.error("Por favor, corrija los campos resaltados.");
         return;
       }
       await mutation.mutateAsync(parsed.data);
@@ -104,14 +104,14 @@ export function Contact() {
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-            Contactez-nous
+            Contáctenos
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold leading-[1.15] tracking-[-0.055em] text-[#06265a] sm:text-[52px]">
-            Discutons de <span className="text-marino-500">votre projet</span>
+            Hablemos de <span className="text-marino-500">su proyecto</span>
           </h2>
           <p className="mx-auto mt-5 max-w-[560px] text-[17px] leading-[1.7] text-[#4b638c]">
-            Une question, un devis ou une urgence de plomberie ? Écrivez-nous,
-            notre équipe vous répond rapidement.
+            ¿Una pregunta, un presupuesto o una urgencia de fontanería?
+            Escríbanos, nuestro equipo le responde rápidamente.
           </p>
         </motion.div>
 
@@ -131,11 +131,11 @@ export function Contact() {
                 <MessageSquareText aria-hidden="true" className="h-7 w-7" />
               </span>
               <h3 className="mt-6 text-[26px] font-extrabold leading-[1.2] tracking-[-0.03em]">
-                Parlons de votre projet
+                Hablemos de su proyecto
               </h3>
               <p className="mt-3 max-w-[340px] text-[15px] leading-[1.7] text-marino-100">
-                Remplissez le formulaire ou contactez-nous directement, nous
-                sommes disponibles à tout moment pour vos urgences.
+                Rellene el formulario o contáctenos directamente, estamos
+                disponibles en todo momento para sus urgencias.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export function Contact() {
                     return (
                       <div>
                         <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
-                          Nom complet
+                          Nombre completo
                         </Label>
                         <Input
                           id={field.name}
@@ -202,7 +202,7 @@ export function Contact() {
                           value={field.state.value}
                           onBlur={field.handleBlur}
                           onChange={(e) => field.handleChange(e.target.value)}
-                          placeholder="Votre nom"
+                          placeholder="Su nombre"
                           aria-invalid={!!error}
                           className={inputClassName}
                         />
@@ -225,7 +225,7 @@ export function Contact() {
                     return (
                       <div>
                         <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
-                          E-mail
+                          Correo electrónico
                         </Label>
                         <Input
                           id={field.name}
@@ -234,7 +234,7 @@ export function Contact() {
                           value={field.state.value}
                           onBlur={field.handleBlur}
                           onChange={(e) => field.handleChange(e.target.value)}
-                          placeholder="vous@exemple.com"
+                          placeholder="usted@ejemplo.com"
                           aria-invalid={!!error}
                           className={inputClassName}
                         />
@@ -252,7 +252,7 @@ export function Contact() {
                   {(field) => (
                     <div>
                       <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
-                        Téléphone <span className="font-normal text-[#8ba0bf]">(optionnel)</span>
+                        Teléfono <span className="font-normal text-[#8ba0bf]">(opcional)</span>
                       </Label>
                       <Input
                         id={field.name}
@@ -272,7 +272,7 @@ export function Contact() {
                   {(field) => (
                     <div>
                       <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
-                        Service <span className="font-normal text-[#8ba0bf]">(optionnel)</span>
+                        Servicio <span className="font-normal text-[#8ba0bf]">(opcional)</span>
                       </Label>
                       <select
                         id={field.name}
@@ -285,7 +285,7 @@ export function Contact() {
                           "flex w-full appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220_0_24_24%22 fill=%22none%22 stroke=%22%230ea5e9%22 stroke-width=%222%22><polyline points=%226_9_12_15_18_9%22/></svg>')] bg-[length:16px] bg-[right_1rem_center] bg-no-repeat pr-10",
                         )}
                       >
-                        <option value="">Sélectionner…</option>
+                        <option value="">Seleccionar…</option>
                         {services.map((service) => (
                           <option key={service} value={service}>
                             {service}
@@ -308,7 +308,7 @@ export function Contact() {
                   return (
                     <div>
                       <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
-                        Message
+                        Mensaje
                       </Label>
                       <Textarea
                         id={field.name}
@@ -316,7 +316,7 @@ export function Contact() {
                         value={field.state.value}
                         onBlur={field.handleBlur}
                         onChange={(e) => field.handleChange(e.target.value)}
-                        placeholder="Décrivez votre besoin en quelques mots…"
+                        placeholder="Describa su necesidad en pocas palabras…"
                         rows={5}
                         aria-invalid={!!error}
                         className={cn(inputClassName, "h-auto min-h-[130px] py-3")}
@@ -344,11 +344,11 @@ export function Contact() {
                       {pending ? (
                         <>
                           <Loader2 aria-hidden="true" className="h-5 w-5 animate-spin" />
-                          Envoi en cours…
+                          Enviando…
                         </>
                       ) : (
                         <>
-                          Envoyer le message
+                          Enviar mensaje
                           <Send aria-hidden="true" className="h-5 w-5" />
                         </>
                       )}

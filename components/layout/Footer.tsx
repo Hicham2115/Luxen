@@ -15,34 +15,34 @@ import {
 } from "lucide-react";
 
 const quickLinks = [
-  { label: "Accueil", href: "#" },
-  { label: "Nos services", href: "#services" },
-  { label: "À propos", href: "#about" },
-  { label: "Avis clients", href: "#testimonials" },
+  { label: "Inicio", href: "#" },
+  { label: "Nuestros servicios", href: "#services" },
+  { label: "Sobre nosotros", href: "#about" },
+  { label: "Opiniones de clientes", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contacto", href: "#contact" },
 ];
 
 const serviceLinks = [
-  "Détection et réparation de fuites",
-  "Installation de salle de bain",
-  "Chauffe-eau",
-  "Débouchage de canalisations",
-  "Réparation de tuyauterie",
-  "Plomberie générale",
+  "Detección y reparación de fugas",
+  "Instalación de baños",
+  "Calentador de agua",
+  "Desatasco de tuberías",
+  "Reparación de tuberías",
+  "Fontanería general",
 ];
 
 const contactRows = [
   { icon: Phone, text: "06 123 456 78", href: "tel:0612345678" },
   { icon: Mail, text: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
-  { icon: MapPin, text: "Casablanca & environs" },
-  { icon: Clock3, text: "24h/24, 7j/7" },
+  { icon: MapPin, text: "Casablanca y alrededores" },
+  { icon: Clock3, text: "24 horas, 7 días" },
 ];
 
 const socials = [
   { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/212612345678" },
-  { icon: Globe, label: "Site web", href: "#" },
-  { icon: Share2, label: "Partager", href: "#" },
+  { icon: Globe, label: "Sitio web", href: "#" },
+  { icon: Share2, label: "Compartir", href: "#" },
 ];
 
 export function Footer() {
@@ -75,10 +75,10 @@ export function Footer() {
         >
           <div>
             <h3 className="text-[26px] font-extrabold leading-[1.2] tracking-[-0.03em] sm:text-[30px]">
-              Une urgence plomberie ?
+              ¿Una urgencia de fontanería?
             </h3>
             <p className="mt-2 max-w-[420px] text-[15px] leading-[1.6] text-marino-100">
-              Notre équipe intervient 24h/24 et 7j/7, où que vous soyez.
+              Nuestro equipo interviene las 24 horas, los 7 días de la semana, estés donde estés.
             </p>
           </div>
           <a
@@ -104,8 +104,8 @@ export function Footer() {
               <span className="text-[22px] font-extrabold tracking-tight">LUXEN</span>
             </Link>
             <p className="mt-5 max-w-[300px] text-[14px] leading-[1.75] text-marino-100/80">
-              Votre expert en plomberie, à votre service. Des solutions
-              rapides, fiables et durables pour votre confort au quotidien.
+              Su experto en fontanería, a su servicio. Soluciones
+              rápidas, fiables y duraderas para su confort diario.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map(({ icon: Icon, label, href }) => (
@@ -138,7 +138,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-[15px] font-bold text-white">Nos services</p>
+            <p className="text-[15px] font-bold text-white">Nuestros servicios</p>
             <ul className="mt-5 space-y-3">
               {serviceLinks.map((service) => (
                 <li key={service}>
@@ -154,7 +154,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-[15px] font-bold text-white">Contact</p>
+            <p className="text-[15px] font-bold text-white">Contacto</p>
             <ul className="mt-5 space-y-4">
               {contactRows.map(({ icon: Icon, text, href }) => (
                 <li key={text} className="flex items-center gap-3">
@@ -178,13 +178,13 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-[13px] text-marino-100/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Luxen. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Luxen. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="transition-colors hover:text-white">
-              Mentions légales
+              Aviso legal
             </a>
             <a href="#" className="transition-colors hover:text-white">
-              Politique de confidentialité
+              Política de privacidad
             </a>
           </div>
         </div>

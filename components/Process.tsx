@@ -6,10 +6,10 @@ import { ArrowRight, ClipboardCheck, Clock3, Phone, ShieldCheck, Wrench } from "
 import heroImage from "@/app/assets/hero.png";
 
 const steps = [
-  { icon: Phone, number: "01", title: "Contactez-nous", description: "Appelez-nous ou remplissez notre formulaire en ligne. Nous sommes à votre écoute pour comprendre vos besoins." },
-  { icon: ClipboardCheck, number: "02", title: "Diagnostic & Devis", description: "Nous analysons votre situation et vous fournissons un devis gratuit, clair et sans engagement." },
-  { icon: Wrench, number: "03", title: "Intervention professionnelle", description: "Nos plombiers qualifiés interviennent rapidement avec du matériel professionnel pour résoudre le problème." },
-  { icon: ShieldCheck, number: "04", title: "Contrôle & Garantie", description: "Nous vérifions la qualité de notre travail et vous bénéficiez d’une garantie sur nos prestations pour votre tranquillité." },
+  { icon: Phone, number: "01", title: "Contáctenos", description: "Llámenos o rellene nuestro formulario en línea. Estamos atentos para entender sus necesidades." },
+  { icon: ClipboardCheck, number: "02", title: "Diagnóstico y presupuesto", description: "Analizamos su situación y le proporcionamos un presupuesto gratuito, claro y sin compromiso." },
+  { icon: Wrench, number: "03", title: "Intervención profesional", description: "Nuestros fontaneros cualificados intervienen rápidamente con equipo profesional para resolver el problema." },
+  { icon: ShieldCheck, number: "04", title: "Control y garantía", description: "Verificamos la calidad de nuestro trabajo y usted se beneficia de una garantía sobre nuestros servicios para su tranquilidad." },
 ];
 
 export function Process() {
@@ -25,9 +25,9 @@ export function Process() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center"
         >
-          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Comment nous travaillons</p>
-          <h2 className="mt-4 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[54px]">Un processus <span className="text-marino-500">simple</span> et efficace</h2>
-          <p className="mx-auto mt-3 max-w-[640px] text-[18px] leading-[1.55] text-[#4c638c]">Nous avons mis en place un processus clair pour garantir<br className="hidden sm:block" /> une expérience sans stress et des résultats impeccables.</p>
+          <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Cómo trabajamos</p>
+          <h2 className="mt-4 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[54px]">Un proceso <span className="text-marino-500">simple</span> y eficaz</h2>
+          <p className="mx-auto mt-3 max-w-[640px] text-[18px] leading-[1.55] text-[#4c638c]">Hemos establecido un proceso claro para garantizar<br className="hidden sm:block" /> una experiencia sin estrés y resultados impecables.</p>
         </motion.div>
 
         <div className="mt-24 grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-18">
@@ -56,9 +56,9 @@ export function Process() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mt-8 flex flex-col items-center justify-between gap-6 rounded-xl bg-[#edf8ff] px-7 py-5 text-center lg:flex-row lg:text-left">
-          <div className="flex items-center gap-4"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#dff1ff] text-marino-500"><Phone aria-hidden="true" className="h-6 w-6" /></span><div><p className="text-[16px] font-bold text-[#092157]">Besoin d’une intervention rapide ?</p><p className="text-[14px] text-[#4b638c]">Nous sommes disponibles 24h/24 et 7j/7<br className="hidden lg:block" /> pour toutes vos urgences plomberie.</p></div></div>
-          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-14 lg:py-0"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#dff1ff] text-marino-500"><Clock3 aria-hidden="true" className="h-6 w-6" /></span><div><p className="text-[16px] font-bold text-[#092157]">Réponse rapide garantie</p><p className="text-[14px] text-[#4b638c]">Nous vous répondons en moins<br /> de 30 minutes.</p></div></div>
-          <div className="text-center"><a href="tel:0612345678" className="inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[17px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />06 123 456 78</a><p className="mt-2 text-[14px] font-medium text-marino-500">Appelez-nous maintenant</p></div>
+          <div className="flex items-center gap-4"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#dff1ff] text-marino-500"><Phone aria-hidden="true" className="h-6 w-6" /></span><div><p className="text-[16px] font-bold text-[#092157]">¿Necesita una intervención rápida?</p><p className="text-[14px] text-[#4b638c]">Estamos disponibles las 24 horas, los 7 días de la semana<br className="hidden lg:block" /> para todas sus urgencias de fontanería.</p></div></div>
+          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-14 lg:py-0"><span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#dff1ff] text-marino-500"><Clock3 aria-hidden="true" className="h-6 w-6" /></span><div><p className="text-[16px] font-bold text-[#092157]">Respuesta rápida garantizada</p><p className="text-[14px] text-[#4b638c]">Le respondemos en menos<br /> de 30 minutos.</p></div></div>
+          <div className="text-center"><a href="tel:0612345678" className="inline-flex h-12 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[17px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />06 123 456 78</a><p className="mt-2 text-[14px] font-medium text-marino-500">Llámenos ahora</p></div>
         </motion.div>
       </div>
     </section>

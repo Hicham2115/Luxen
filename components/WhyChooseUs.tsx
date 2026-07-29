@@ -8,10 +8,10 @@ import workerImage from "@/app/assets/worker.png";
 type Benefit = { icon: LucideIcon; title: string; description: string };
 
 const benefits: Benefit[] = [
-  { icon: BadgeCheck, title: "Professionnels certifiés", description: "Une équipe qualifiée et expérimentée pour garantir des travaux impeccables et conformes aux normes." },
-  { icon: Clock3, title: "Disponible 24h/24 et 7j/7", description: "Nous intervenons à tout moment pour vos urgences et vos besoins en plomberie." },
-  { icon: ShieldCheck, title: "Travail garanti", description: "Toutes nos interventions sont garanties pour vous offrir tranquillité d’esprit et durabilité." },
-  { icon: PiggyBank, title: "Tarifs transparents et compétitifs", description: "Des prix justes et clairs, sans surprise, avec des devis gratuits et détaillés." },
+  { icon: BadgeCheck, title: "Profesionales certificados", description: "Un equipo cualificado y experimentado para garantizar trabajos impecables y conformes a las normas." },
+  { icon: Clock3, title: "Disponibles 24 horas, los 7 días", description: "Intervenimos en cualquier momento para sus urgencias y necesidades de fontanería." },
+  { icon: ShieldCheck, title: "Trabajo garantizado", description: "Todas nuestras intervenciones están garantizadas para ofrecerle tranquilidad y durabilidad." },
+  { icon: PiggyBank, title: "Tarifas transparentes y competitivas", description: "Precios justos y claros, sin sorpresas, con presupuestos gratuitos y detallados." },
 ];
 
 export function WhyChooseUs() {
@@ -26,12 +26,12 @@ export function WhyChooseUs() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="relative z-10 max-w-[780px] pt-4"
           >
-            <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Pourquoi nous choisir</p>
+            <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Por qué elegirnos</p>
             <h2 className="mt-6 text-[40px] font-extrabold leading-[1.16] tracking-[-0.055em] text-[#06265a] sm:text-[53px]">
-              La qualité et votre satisfaction<br className="hidden lg:block" /> sont <span className="text-marino-500">notre priorité</span>
+              La calidad y su satisfacción<br className="hidden lg:block" /> son <span className="text-marino-500">nuestra prioridad</span>
             </h2>
             <span className="mt-7 block h-1 w-15 rounded-full bg-gold-500" />
-            <p className="mt-6 max-w-[600px] text-[17px] leading-[1.75] text-[#4b638c]">Nous mettons notre expertise et notre passion au service de vos installations de plomberie. Des solutions fiables, durables et un service client irréprochable.</p>
+            <p className="mt-6 max-w-[600px] text-[17px] leading-[1.75] text-[#4b638c]">Ponemos nuestra experiencia y pasión al servicio de sus instalaciones de fontanería. Soluciones fiables, duraderas y un servicio al cliente impecable.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -40,7 +40,7 @@ export function WhyChooseUs() {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
             className="relative mt-10 h-[330px] lg:absolute lg:-right-8 lg:-top-24 lg:mt-0 lg:h-[545px] lg:w-[620px]"
           >
-            <Image src={workerImage} alt="Plombier professionnel" fill sizes="(min-width: 1024px) 620px, 100vw" className="object-contain object-center" />
+            <Image src={workerImage} alt="Fontanero profesional" fill sizes="(min-width: 1024px) 620px, 100vw" className="object-contain object-center" />
           </motion.div>
         </div>
 
@@ -68,9 +68,9 @@ export function WhyChooseUs() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mt-6 flex flex-col items-center justify-between gap-6 rounded-xl bg-[#edf8ff] px-7 py-5 text-center lg:flex-row lg:text-left">
-          <div className="flex items-center gap-4"><span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-white text-marino-500"><ShieldCheck aria-hidden="true" className="h-9 w-9" /></span><div><p className="text-[19px] font-bold text-[#092157]">Votre confiance est notre plus grande réussite.</p><p className="text-[15px] text-[#4b638c]">Des centaines de clients satisfaits nous recommandent.</p></div></div>
-          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-12 lg:py-0"><div className="flex text-gold-500">{Array.from({ length: 5 }).map((_, index) => <Star key={index} aria-hidden="true" className="h-6 w-6 fill-current" />)}</div><p className="text-[14px] leading-[1.35] text-[#4b638c]"><strong className="block text-[#092157]">+10 ans d’expérience</strong>dans la plomberie</p></div>
-          <a href="#contact" className="inline-flex h-14 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[17px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />Demander un devis</a>
+          <div className="flex items-center gap-4"><span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-white text-marino-500"><ShieldCheck aria-hidden="true" className="h-9 w-9" /></span><div><p className="text-[19px] font-bold text-[#092157]">Su confianza es nuestro mayor logro.</p><p className="text-[15px] text-[#4b638c]">Cientos de clientes satisfechos nos recomiendan.</p></div></div>
+          <div className="flex items-center gap-4 border-y border-marino-200 py-4 lg:border-x lg:border-y-0 lg:px-12 lg:py-0"><div className="flex text-gold-500">{Array.from({ length: 5 }).map((_, index) => <Star key={index} aria-hidden="true" className="h-6 w-6 fill-current" />)}</div><p className="text-[14px] leading-[1.35] text-[#4b638c]"><strong className="block text-[#092157]">+10 años de experiencia</strong>en fontanería</p></div>
+          <a href="#contact" className="inline-flex h-14 items-center gap-3 rounded-lg bg-marino-500 px-7 text-[17px] font-semibold text-white shadow-[0_8px_18px_rgba(20,40,80,0.23)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-marino-600 hover:shadow-[0_12px_24px_rgba(20,40,80,0.32)]"><Phone aria-hidden="true" className="h-5 w-5" />Pedir presupuesto</a>
         </motion.div>
       </div>
     </section>

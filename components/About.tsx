@@ -16,18 +16,18 @@ import workerImage from "@/app/assets/worker.png";
 const principles = [
   {
     icon: BadgeCheck,
-    title: "Notre mission",
-    text: "Fournir un service de plomberie de qualité supérieure, dans le respect des normes et avec un souci constant de la satisfaction client.",
+    title: "Nuestra misión",
+    text: "Ofrecer un servicio de fontanería de calidad superior, respetando las normas y con una atención constante a la satisfacción del cliente.",
   },
   {
     icon: Target,
-    title: "Notre vision",
-    text: "Être l’entreprise de plomberie de référence dans notre région grâce à notre professionnalisme, notre réactivité et notre engagement envers l’innovation.",
+    title: "Nuestra visión",
+    text: "Ser la empresa de fontanería de referencia en nuestra región gracias a nuestro profesionalismo, nuestra capacidad de respuesta y nuestro compromiso con la innovación.",
   },
   {
     icon: UsersRound,
-    title: "Nos valeurs",
-    text: "Honnêteté, transparence, qualité du travail et respect des délais sont les valeurs qui guident chaque intervention.",
+    title: "Nuestros valores",
+    text: "Honestidad, transparencia, calidad del trabajo y respeto de los plazos son los valores que guían cada intervención.",
   },
 ];
 
@@ -35,26 +35,26 @@ const stats = [
   {
     icon: CalendarDays,
     value: "10+",
-    label: "Années d’expérience",
-    text: "Un savoir-faire reconnu et des centaines de clients satisfaits.",
+    label: "Años de experiencia",
+    text: "Un saber hacer reconocido y cientos de clientes satisfechos.",
   },
   {
     icon: UsersRound,
     value: "1500+",
-    label: "Projets réalisés",
-    text: "Interventions réussies dans les maisons et entreprises.",
+    label: "Proyectos realizados",
+    text: "Intervenciones exitosas en hogares y empresas.",
   },
   {
     icon: House,
     value: "100%",
-    label: "Clients satisfaits",
-    text: "Notre engagement : un travail bien fait et durable.",
+    label: "Clientes satisfechos",
+    text: "Nuestro compromiso: un trabajo bien hecho y duradero.",
   },
   {
     icon: Headset,
     value: "24/7",
     label: "Disponibles",
-    text: "Nous sommes là pour vous, à tout moment.",
+    text: "Estamos aquí para usted, en todo momento.",
   },
 ];
 
@@ -75,19 +75,19 @@ export function About() {
           >
             <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
               <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-              À propos de nous
+              Sobre nosotros
             </p>
             <h2 className="mt-6 text-[38px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:text-[49px]">
-              Une entreprise de plomberie
+              Una empresa de fontanería
               <br className="hidden lg:block" />{" "}
-              <span className="text-marino-500">fiable et passionnée</span>
+              <span className="text-marino-500">fiable y apasionada</span>
             </h2>
             <span className="mt-6 block h-1 w-13 rounded-full bg-gold-500" />
             <p className="mt-6 max-w-[550px] text-[16px] leading-[1.72] text-[#4b638c]">
-              Depuis plus de 10 ans, nous mettons notre expertise au service des
-              particuliers et des professionnels. Notre mission est simple :
-              offrir des solutions de plomberie durables, efficaces et adaptées
-              à chaque besoin.
+              Desde hace más de 10 años, ponemos nuestra experiencia al servicio
+              de particulares y profesionales. Nuestra misión es simple:
+              ofrecer soluciones de fontanería duraderas, eficaces y adaptadas
+              a cada necesidad.
             </p>
             <div className="mt-7 space-y-5">
               {principles.map(({ icon: Icon, title, text }, index) => (
@@ -128,7 +128,7 @@ export function About() {
           >
             <Image
               src={workerImage}
-              alt="Plombier professionnel"
+              alt="Fontanero profesional"
               fill
               sizes="(min-width: 1024px) 58vw, 100vw"
               className="object-cover object-center"
@@ -148,11 +148,11 @@ export function About() {
                   className="h-15 w-15 shrink-0"
                 />
                 <div>
-                  <p className="text-[18px] font-bold">Qualité garantie</p>
+                  <p className="text-[18px] font-bold">Calidad garantizada</p>
                   <p className="mt-2 text-[14px] leading-[1.55]">
-                    Tous nos travaux sont garantis.
+                    Todos nuestros trabajos están garantizados.
                     <br />
-                    Votre satisfaction est notre priorité.
+                    Su satisfacción es nuestra prioridad.
                   </p>
                 </div>
               </div>

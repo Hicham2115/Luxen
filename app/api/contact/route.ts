@@ -12,11 +12,11 @@ export async function POST(req: Request) {
   try {
     const body = contactSchema.parse(await req.json());
     console.log("New contact request:", body);
-    return Response.json({ message: "Message envoyé avec succès." });
+    return Response.json({ message: "Mensaje enviado con éxito." });
   } catch (error) {
     console.error(error);
     return Response.json(
-      { message: "Veuillez vérifier les champs du formulaire." },
+      { message: "Por favor, verifique los campos del formulario." },
       { status: 400 },
     );
   }

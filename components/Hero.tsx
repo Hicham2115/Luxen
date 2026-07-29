@@ -30,18 +30,18 @@ export function Hero() {
           className="max-w-160"
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-4 py-1.5 text-[13px] font-bold uppercase tracking-wide text-[#06265a]">
-            Services professionnels à votre service
+            Servicios profesionales a su servicio
           </p>
           <h1 className="mt-6 text-[clamp(2.35rem,6vw,4rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-white">
-            Votre expert en
+            Su Experto en
             <br />
-            plomberie, à votre
+            Fontanería, a Su
             <br />
-            service
+            Servicio
           </h1>
           <p className="mt-6 max-w-120 text-[clamp(1.05rem,2vw,1.25rem)] leading-[1.6] text-white/80">
-            Des solutions de plomberie rapides, fiables et durables pour votre
-            confort au quotidien.
+            Soluciones de fontanería rápidas, fiables y duraderas para su
+            confort diario.
           </p>
 
           <motion.div
@@ -57,7 +57,7 @@ export function Hero() {
                 "h-14 gap-3 rounded-full bg-gold-500 px-7 text-[16px] font-semibold text-[#06265a] shadow-[0_12px_26px_rgba(0,0,0,0.28)] hover:bg-gold-600",
               )}
             >
-              Obtenez un devis{" "}
+              Solicitar presupuesto{" "}
               <ArrowRight aria-hidden="true" className="h-5 w-5" />
             </a>
             <a
@@ -73,7 +73,7 @@ export function Hero() {
                   className="ml-0.5 h-3 w-3 fill-marino-500 text-marino-500"
                 />
               </span>
-              En savoir plus
+              Saber más
             </a>
           </motion.div>
 
@@ -88,7 +88,7 @@ export function Hero() {
                 10+
               </span>
               <span className="whitespace-nowrap text-[14px] font-medium leading-[1.3] text-white">
-                Années d&apos;expérience
+                Años de experiencia
               </span>
             </div>
             <a

@@ -28,53 +28,53 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Intervention rapide pour une fuite de chasse d’eau. Le plombier était ponctuel, professionnel et très sympathique. Travail impeccable et prix honnête. Je recommande les yeux fermés !",
+      "Intervención rápida por una fuga en la cisterna. El fontanero fue puntual, profesional y muy amable. Trabajo impecable y precio justo. ¡Lo recomiendo sin dudarlo!",
     name: "Yassine B.",
     city: "Casablanca",
-    type: "Particulier",
+    type: "Particular",
     position: "50% 28%",
   },
   {
     quote:
-      "Nous avons fait appel à leurs services pour la rénovation complète de notre salle de bain. Résultat au-delà de nos attentes ! Équipe sérieuse, travail soigné et respect des délais. Un grand merci !",
+      "Recurrimos a sus servicios para la renovación completa de nuestro baño. ¡Resultado por encima de nuestras expectativas! Equipo serio, trabajo cuidado y plazos respetados. ¡Muchas gracias!",
     name: "Imane K.",
     city: "Rabat",
-    type: "Particulier",
+    type: "Particular",
     position: "50% 30%",
   },
   {
     quote:
-      "Excellente expérience avec cette entreprise. De très bons conseils professionnels et intervention très rapide pour déboucher nos canalisations. Service 24/7 vraiment au top !",
+      "Excelente experiencia con esta empresa. Muy buenos consejos profesionales e intervención muy rápida para desatascar nuestras tuberías. ¡Servicio 24/7 realmente excelente!",
     name: "Mehdi T.",
     city: "Mohammedia",
-    type: "Particulier",
+    type: "Particular",
     position: "50% 30%",
   },
   {
     quote:
-      "Nous travaillons régulièrement avec cette équipe sur nos chantiers. Toujours fiables, réactifs et professionnels. Un partenaire de confiance pour tous nos besoins en plomberie.",
+      "Trabajamos regularmente con este equipo en nuestras obras. Siempre fiables, receptivos y profesionales. Un socio de confianza para todas nuestras necesidades de fontanería.",
     name: "Société Bâtimex",
     city: "Casablanca",
-    type: "Professionnel",
+    type: "Profesional",
     position: "23% 28%",
   },
   {
     quote:
-      "Un service irréprochable, du premier contact jusqu’à la fin des travaux. L’équipe a été à l’écoute et nous a donné des conseils très utiles.",
+      "Un servicio impecable, desde el primer contacto hasta el final de las obras. El equipo escuchó nuestras necesidades y nos dio consejos muy útiles.",
     name: "Nora A.",
     city: "Marrakech",
-    type: "Particulier",
+    type: "Particular",
     position: "78% 29%",
   },
 ];
 
 const highlights = [
-  { icon: ShieldCheck, title: "Travail de qualité", text: "Garantie 100%" },
-  { icon: Clock3, title: "Intervention rapide", text: "Disponible 24/7" },
+  { icon: ShieldCheck, title: "Trabajo de calidad", text: "Garantía 100%" },
+  { icon: Clock3, title: "Intervención rápida", text: "Disponible 24/7" },
   {
     icon: UsersRound,
-    title: "Équipe certifiée",
-    text: "Professionnels qualifiés",
+    title: "Equipo certificado",
+    text: "Profesionales cualificados",
   },
 ];
 
@@ -116,16 +116,16 @@ export function Testimonials() {
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-            Avis de nos clients
+            Opiniones de nuestros clientes
           </p>
           <h2 className="mt-5 text-[39px] font-extrabold leading-[1.13] tracking-[-0.055em] text-[#07255a] sm:text-[54px]">
-            La satisfaction de nos clients
-            <br className="hidden sm:block" /> est notre{" "}
-            <span className="text-marino-500">plus belle réussite</span>
+            La satisfacción de nuestros clientes
+            <br className="hidden sm:block" /> es nuestro{" "}
+            <span className="text-marino-500">mayor logro</span>
           </h2>
           <p className="mx-auto mt-6 max-w-[590px] text-[17px] leading-[1.7] text-[#4b638c]">
-            Découvrez les témoignages de nos clients satisfaits qui nous ont
-            fait confiance pour leurs projets de plomberie.
+            Descubra los testimonios de nuestros clientes satisfechos que han
+            confiado en nosotros para sus proyectos de fontanería.
           </p>
         </motion.div>
 
@@ -133,7 +133,7 @@ export function Testimonials() {
           <button
             type="button"
             onClick={showPrevious}
-            aria-label="Afficher les avis précédents"
+            aria-label="Mostrar opiniones anteriores"
             className="absolute left-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:-translate-x-1 hover:bg-marino-50 2xl:flex"
           >
             <ArrowLeft className="h-7 w-7" strokeWidth={2.3} />
@@ -141,7 +141,7 @@ export function Testimonials() {
           <button
             type="button"
             onClick={showNext}
-            aria-label="Afficher les avis suivants"
+            aria-label="Mostrar opiniones siguientes"
             className="absolute right-[-62px] top-1/2 z-10 hidden h-[58px] w-[58px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_8px_24px_rgba(9,42,83,.12)] transition hover:translate-x-1 hover:bg-marino-50 2xl:flex"
           >
             <ArrowRight className="h-7 w-7" strokeWidth={2.3} />
@@ -189,7 +189,7 @@ export function Testimonials() {
                     <p className="flex items-center gap-2 truncate text-[16px] font-bold text-[#091e51]">
                       {testimonial.name}
                       <BadgeCheck
-                        aria-label="Client vérifié"
+                        aria-label="Cliente verificado"
                         className="h-[18px] w-[18px] shrink-0 fill-marino-500 text-white"
                       />
                     </p>
@@ -209,7 +209,7 @@ export function Testimonials() {
             <button
               type="button"
               onClick={showPrevious}
-              aria-label="Afficher les avis précédents"
+              aria-label="Mostrar opiniones anteriores"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-marino-100 bg-white text-marino-500 shadow-sm"
             >
               <ArrowLeft className="h-5 w-5" />
@@ -217,7 +217,7 @@ export function Testimonials() {
             <button
               type="button"
               onClick={showNext}
-              aria-label="Afficher les avis suivants"
+              aria-label="Mostrar opiniones siguientes"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-marino-100 bg-white text-marino-500 shadow-sm"
             >
               <ArrowRight className="h-5 w-5" />

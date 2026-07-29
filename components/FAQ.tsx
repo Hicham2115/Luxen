@@ -26,54 +26,54 @@ type FaqItem = { icon: LucideIcon; question: string; answer: string };
 const faqs: FaqItem[] = [
   {
     icon: MessageCircleQuestion,
-    question: "Combien coûte une intervention de plomberie ?",
+    question: "¿Cuánto cuesta una intervención de fontanería?",
     answer:
-      "Le coût dépend de la nature de l’intervention. Nous proposons toujours un devis gratuit et détaillé avant de commencer les travaux, sans aucun engagement.",
+      "El coste depende de la naturaleza de la intervención. Siempre ofrecemos un presupuesto gratuito y detallado antes de comenzar los trabajos, sin ningún compromiso.",
   },
   {
     icon: PhoneCall,
-    question: "Proposez-vous un service d’urgence 24/7 ?",
+    question: "¿Ofrecen un servicio de urgencia 24/7?",
     answer:
-      "Oui, notre équipe est disponible 24h/24 et 7j/7, y compris les jours fériés, pour toutes vos urgences de plomberie.",
+      "Sí, nuestro equipo está disponible las 24 horas, los 7 días de la semana, incluidos festivos, para todas sus urgencias de fontanería.",
   },
   {
     icon: MapPin,
-    question: "Intervenez-vous dans toute ma région ?",
+    question: "¿Intervienen en toda mi región?",
     answer:
-      "Nous intervenons dans toute la région et ses environs. Contactez-nous pour confirmer notre disponibilité dans votre secteur.",
+      "Intervenimos en toda la región y sus alrededores. Contáctenos para confirmar nuestra disponibilidad en su zona.",
   },
   {
     icon: ClipboardList,
-    question: "Le devis est-il vraiment gratuit ?",
+    question: "¿El presupuesto es realmente gratuito?",
     answer:
-      "Oui, le devis est entièrement gratuit et sans engagement. Vous ne payez que si vous acceptez notre proposition.",
+      "Sí, el presupuesto es totalmente gratuito y sin compromiso. Solo paga si acepta nuestra propuesta.",
   },
   {
     icon: ShieldCheck,
-    question: "Vos travaux sont-ils garantis ?",
+    question: "¿Sus trabajos están garantizados?",
     answer:
-      "Toutes nos interventions sont garanties. Nous nous engageons sur la qualité et la durabilité de nos travaux.",
+      "Todas nuestras intervenciones están garantizadas. Nos comprometemos con la calidad y la durabilidad de nuestros trabajos.",
   },
   {
     icon: CalendarClock,
-    question: "Quels sont vos délais d’intervention ?",
+    question: "¿Cuáles son sus plazos de intervención?",
     answer:
-      "Pour les urgences, nous intervenons généralement sous 30 minutes à 1 heure. Pour les autres demandes, un rendez-vous est fixé selon vos disponibilités.",
+      "Para las urgencias, solemos intervenir en 30 minutos a 1 hora. Para otras solicitudes, se fija una cita según su disponibilidad.",
   },
 ];
 
 const trustPoints = [
-  { icon: BadgeCheck, title: "Devis gratuit", text: "Sans engagement" },
-  { icon: Clock3, title: "Disponible 24/7", text: "Même les jours fériés" },
+  { icon: BadgeCheck, title: "Presupuesto gratuito", text: "Sin compromiso" },
+  { icon: Clock3, title: "Disponible 24/7", text: "Incluso festivos" },
   {
     icon: ShieldCheck,
-    title: "Garantie satisfaction",
-    text: "Travail propre et durable",
+    title: "Garantía de satisfacción",
+    text: "Trabajo limpio y duradero",
   },
   {
     icon: UsersRound,
-    title: "Plombiers certifiés",
-    text: "Professionnels qualifiés",
+    title: "Fontaneros certificados",
+    text: "Profesionales cualificados",
   },
 ];
 
@@ -95,19 +95,19 @@ export function FAQ() {
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-            Foire aux questions
+            Preguntas frecuentes
           </p>
           <h2 className="mt-5 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
-            Vos questions, <span className="text-marino-500">nos réponses</span>
+            Sus preguntas, <span className="text-marino-500">nuestras respuestas</span>
           </h2>
           <p className="mx-auto mt-4 max-w-[560px] text-[17px] leading-[1.65] text-[#4b638c]">
-            Retrouvez les réponses aux questions les plus fréquentes. Si vous ne
-            trouvez pas votre réponse,{" "}
+            Encuentre las respuestas a las preguntas más frecuentes. Si no
+            encuentra su respuesta,{" "}
             <a
               href="#contact"
               className="font-semibold text-marino-500 hover:text-marino-600"
             >
-              contactez-nous !
+              ¡contáctenos!
             </a>
           </p>
         </motion.div>
@@ -182,7 +182,7 @@ export function FAQ() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <Image
                 src={heroImage}
-                alt="Plombier professionnel en intervention"
+                alt="Fontanero profesional en intervención"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover"
@@ -194,13 +194,13 @@ export function FAQ() {
                 <Phone aria-hidden="true" strokeWidth={1.8} className="h-6 w-6" />
               </span>
               <h3 className="mt-4 text-[19px] font-bold leading-[1.3] text-[#071e51]">
-                Une autre question ?
+                ¿Otra pregunta?
                 <br />
-                <span className="text-marino-500">Nous sommes là pour vous.</span>
+                <span className="text-marino-500">Estamos aquí para usted.</span>
               </h3>
               <p className="mx-auto mt-3 max-w-[320px] text-[14px] leading-[1.6] text-[#4b638c]">
-                Notre équipe est disponible 24h/24 et 7j/7 pour répondre à
-                toutes vos questions et à vos urgences plomberie.
+                Nuestro equipo está disponible las 24 horas, los 7 días de la
+                semana, para responder a todas sus preguntas y urgencias de fontanería.
               </p>
               <a
                 href="tel:0612345678"
@@ -214,7 +214,7 @@ export function FAQ() {
                 className="mt-3 flex items-center justify-center gap-2 text-[14px] font-semibold text-marino-500 hover:text-marino-600"
               >
                 <ArrowRight aria-hidden="true" className="h-4 w-4" />
-                Nous contacter
+                Contáctenos
               </a>
             </div> */}
           </motion.div>
