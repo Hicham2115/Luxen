@@ -2,24 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import {
-  Clock3,
-  Droplet,
-  Globe,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Phone,
-  Share2,
-  Wrench,
-} from "lucide-react";
+import { Clock3, Droplet, Mail, MapPin, Phone, Wrench } from "lucide-react";
 
 const quickLinks = [
   { label: "Inicio", href: "#" },
-  { label: "Nuestros servicios", href: "#services" },
+  { label: "Servicios", href: "#services" },
   { label: "Tarifas", href: "#pricing" },
-  { label: "Sobre nosotros", href: "#about" },
-  { label: "Opiniones de clientes", href: "#testimonials" },
+  { label: "Sobre Nosotros", href: "#about" },
+  { label: "Opiniones", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contact" },
 ];
@@ -38,12 +28,6 @@ const contactRows = [
   { icon: Mail, text: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
   { icon: MapPin, text: "Calle Barandiaran 9 bajo, 48903" },
   { icon: Clock3, text: "24 horas, 7 días" },
-];
-
-const socials = [
-  { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/212612345678" },
-  { icon: Globe, label: "Sitio web", href: "#" },
-  { icon: Share2, label: "Compartir", href: "#" },
 ];
 
 export function Footer() {
@@ -79,7 +63,8 @@ export function Footer() {
               ¿Una urgencia de fontanería?
             </h3>
             <p className="mt-2 max-w-[420px] text-[15px] leading-[1.6] text-marino-100">
-              Nuestro equipo interviene las 24 horas, los 7 días de la semana, estés donde estés.
+              Nuestro equipo interviene las 24 horas, los 7 días de la semana,
+              estés donde estés.
             </p>
           </div>
           <a
@@ -95,31 +80,25 @@ export function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <span className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-marino-400">
-                <Droplet aria-hidden="true" strokeWidth={2.5} className="h-6 w-6" />
+                <Droplet
+                  aria-hidden="true"
+                  strokeWidth={2.5}
+                  className="h-6 w-6"
+                />
                 <Wrench
                   aria-hidden="true"
                   strokeWidth={2.4}
                   className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-[#041b45] p-0.5"
                 />
               </span>
-              <span className="text-[22px] font-extrabold tracking-tight">LUXEN</span>
+              <span className="text-[22px] font-extrabold tracking-tight">
+                LUXEN
+              </span>
             </Link>
             <p className="mt-5 max-w-[300px] text-[14px] leading-[1.75] text-marino-100/80">
-              Su experto en fontanería y calefacción, a su servicio.
-              Soluciones rápidas, fiables y duraderas para su confort diario.
+              Su experto en fontanería y calefacción, a su servicio. Soluciones
+              rápidas, fiables y duraderas para su confort diario.
             </p>
-            <div className="mt-6 flex gap-3">
-              {socials.map(({ icon: Icon, label, href }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors duration-300 hover:bg-marino-500"
-                >
-                  <Icon aria-hidden="true" className="h-[18px] w-[18px]" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -139,7 +118,9 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-[15px] font-bold text-white">Nuestros servicios</p>
+            <p className="text-[15px] font-bold text-white">
+              Nuestros servicios
+            </p>
             <ul className="mt-5 space-y-3">
               {serviceLinks.map((service) => (
                 <li key={service}>
@@ -170,7 +151,9 @@ export function Footer() {
                       {text}
                     </a>
                   ) : (
-                    <span className="text-[14px] text-marino-100/80">{text}</span>
+                    <span className="text-[14px] text-marino-100/80">
+                      {text}
+                    </span>
                   )}
                 </li>
               ))}
@@ -178,17 +161,23 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-[13px] text-marino-100/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Luxen. Todos los derechos reservados.</p>
-          <div className="flex gap-6">
-            <a href="#" className="transition-colors hover:text-white">
-              Aviso legal
-            </a>
-            <a href="#" className="transition-colors hover:text-white">
-              Política de privacidad
-            </a>
-          </div>
+        <div className="flex items-center justify-center border-t border-white/10 py-6 text-[13px] text-white">
+          <p>
+            © {new Date().getFullYear()} Luxen. Todos los derechos reservados.
+          </p>
         </div>
+        <p className="relative pb-6 text-center text-[11px] text-white/70">
+          – Designed &amp; developed by{" "}
+          <a
+            className="underline decoration-[#8a8378]/30 underline-offset-2 transition-colors duration-200 hover:text-[#8a8378]"
+            href="https://www.stallionadvertising.ma/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stallion Advertising
+          </a>
+          .
+        </p>
       </div>
     </footer>
   );

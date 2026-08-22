@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/LenisProvider";
-import { LoadingScreen } from "@/components/LoadingScreen";
 import { Providers } from "@/app/providers";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
@@ -22,7 +21,6 @@ export default function RootLayout({
     <html lang="es" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
         <Providers>
-          <LoadingScreen />
           <LenisProvider>
             <Header />
             {children}

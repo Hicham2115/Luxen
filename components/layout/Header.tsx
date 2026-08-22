@@ -11,7 +11,8 @@ const navLinks = [
   { label: "Servicios", href: "#services" },
   { label: "Tarifas", href: "#pricing" },
   { label: "Sobre Nosotros", href: "#about" },
-  { label: "Nuestros Trabajos", href: "#realisations" },
+  { label: "Opiniones", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contact" },
 ];
 
@@ -58,7 +59,7 @@ export function Header() {
         <div className="hidden items-center gap-6 lg:flex">
           <span className="h-8 w-px bg-[#e5ebf2]" />
           <a
-            href="tel:0612345678"
+            href="tel:602838607"
             className={cn(
               buttonVariants({ size: "lg" }),
               "h-11 gap-2.5 rounded-full bg-[linear-gradient(135deg,#06265a_0%,#0b3f85_100%)] pl-2 pr-6 text-[14px] font-semibold text-white shadow-[0_10px_24px_rgba(20,40,80,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(20,40,80,0.4)]"
@@ -67,13 +68,13 @@ export function Header() {
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gold-500 text-[#06265a]">
               <Phone aria-hidden="true" className="h-3.5 w-3.5" />
             </span>
-            06 123 456 78
+            602 83 86 07
           </a>
         </div>
 
         <div className="flex items-center gap-3 sm:gap-4 lg:hidden">
           <a
-            href="tel:0612345678"
+            href="tel:602838607"
             aria-label="Llámenos"
             className="flex h-11 w-11 items-center justify-center rounded-full bg-[linear-gradient(135deg,#06265a_0%,#0b3f85_100%)] text-white shadow-[0_10px_22px_rgba(20,40,80,0.3)] ring-2 ring-gold-500/40 sm:h-13 sm:w-13"
           >
@@ -108,7 +109,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="tel:0612345678"
+            href="tel:602838607"
             className={cn(
               buttonVariants({ size: "lg" }),
               "mt-3 gap-2.5 rounded-full bg-[linear-gradient(135deg,#06265a_0%,#0b3f85_100%)] pl-2 pr-6 text-white hover:shadow-lg"
@@ -117,7 +118,7 @@ export function Header() {
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gold-500 text-[#06265a]">
               <Phone aria-hidden="true" className="h-3.5 w-3.5" />
             </span>
-            06 123 456 78
+            602 83 86 07
           </a>
         </nav>
       )}

@@ -15,14 +15,12 @@ import {
   UsersRound,
 } from "lucide-react";
 import heroImage from "@/app/assets/hero.png";
-import workersImage from "@/app/assets/workers.png";
 
 type Testimonial = {
   quote: string;
   name: string;
   city: string;
   type: string;
-  position: string;
 };
 
 const testimonials: Testimonial[] = [
@@ -32,7 +30,6 @@ const testimonials: Testimonial[] = [
     name: "Yassine B.",
     city: "Casablanca",
     type: "Particular",
-    position: "50% 28%",
   },
   {
     quote:
@@ -40,7 +37,6 @@ const testimonials: Testimonial[] = [
     name: "Imane K.",
     city: "Rabat",
     type: "Particular",
-    position: "50% 30%",
   },
   {
     quote:
@@ -48,7 +44,6 @@ const testimonials: Testimonial[] = [
     name: "Mehdi T.",
     city: "Mohammedia",
     type: "Particular",
-    position: "50% 30%",
   },
   {
     quote:
@@ -56,7 +51,6 @@ const testimonials: Testimonial[] = [
     name: "Société Bâtimex",
     city: "Casablanca",
     type: "Profesional",
-    position: "23% 28%",
   },
   {
     quote:
@@ -64,7 +58,6 @@ const testimonials: Testimonial[] = [
     name: "Nora A.",
     city: "Marrakech",
     type: "Particular",
-    position: "78% 29%",
   },
 ];
 
@@ -175,15 +168,8 @@ export function Testimonials() {
                   {testimonial.quote}
                 </p>
                 <div className="mt-auto flex items-center gap-4 border-t border-[#e6edf5] pt-5">
-                  <span className="relative h-[72px] w-[72px] shrink-0 overflow-hidden rounded-full bg-[#eef5fa]">
-                    <Image
-                      src={workersImage}
-                      alt=""
-                      fill
-                      sizes="72px"
-                      className="scale-[2.7] object-cover"
-                      style={{ objectPosition: testimonial.position }}
-                    />
+                  <span className="flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-marino-500 text-[26px] font-bold text-white">
+                    {testimonial.name.charAt(0)}
                   </span>
                   <div className="min-w-0">
                     <p className="flex items-center gap-2 truncate text-[16px] font-bold text-[#091e51]">
