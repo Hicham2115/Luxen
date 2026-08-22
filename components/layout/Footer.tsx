@@ -34,9 +34,9 @@ const serviceLinks = [
 ];
 
 const contactRows = [
-  { icon: Phone, text: "06 123 456 78", href: "tel:0612345678" },
+  { icon: Phone, text: "602 83 86 07", href: "tel:602838607" },
   { icon: Mail, text: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
-  { icon: MapPin, text: "Casablanca y alrededores" },
+  { icon: MapPin, text: "Calle Barandiaran 9 bajo, 48903" },
   { icon: Clock3, text: "24 horas, 7 días" },
 ];
 
@@ -83,11 +83,11 @@ export function Footer() {
             </p>
           </div>
           <a
-            href="tel:0612345678"
+            href="tel:602838607"
             className="inline-flex h-14 shrink-0 items-center gap-3 rounded-xl bg-white px-7 text-[16px] font-semibold text-[#06265a] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
           >
             <Phone aria-hidden="true" className="h-5 w-5 text-marino-500" />
-            06 123 456 78
+            602 83 86 07
           </a>
         </motion.div>
 

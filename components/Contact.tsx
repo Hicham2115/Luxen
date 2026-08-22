@@ -43,9 +43,9 @@ const services = [
 ];
 
 const contactDetails = [
-  { icon: Phone, label: "Teléfono", value: "06 123 456 78", href: "tel:0612345678" },
+  { icon: Phone, label: "Teléfono", value: "602 83 86 07", href: "tel:602838607" },
   { icon: Mail, label: "Correo electrónico", value: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
-  { icon: MapPin, label: "Zona de intervención", value: "Casablanca y alrededores" },
+  { icon: MapPin, label: "Dirección", value: "Calle Barandiaran 9 bajo, 48903" },
   { icon: Clock3, label: "Disponibilidad", value: "24 horas, 7 días" },
 ];
 
