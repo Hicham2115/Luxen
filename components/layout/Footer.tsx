@@ -174,7 +174,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Stallion Advertising
+            Stallion Advertising 
           </a>
           .
         </p>
