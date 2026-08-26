@@ -12,12 +12,12 @@ import kitchenImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_2
 import pipeImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_30_11 PM.png";
 
 const services = [
-  { icon: Pipette, image: leakImage, title: "Detección y reparación de fugas", description: "Búsqueda precisa de fugas y reparación rápida para evitar cualquier daño." },
-  { icon: ShowerHead, image: bathroomImage, title: "Instalación de baños", description: "Diseño e instalación completa de baños modernos y funcionales." },
-  { icon: ThermometerSun, image: waterHeaterImage, title: "Calefacción y calentadores de agua", description: "Instalación, mantenimiento y reparación de calentadores de agua y sistemas de calefacción." },
-  { icon: Bath, image: drainImage, title: "Desatasco de tuberías", description: "Desatasco rápido y eficaz de fregaderos, inodoros, duchas y tuberías." },
-  { icon: Wrench, image: pipeImage, title: "Reparación de tuberías", description: "Reparación y sustitución de tuberías dañadas o desgastadas." },
-  { icon: House, image: kitchenImage, title: "Fontanería general", description: "Todos sus trabajos de fontanería para el hogar y locales profesionales." },
+  { icon: Pipette, image: leakImage, title: "Detección y reparación de fugas", description: "Búsqueda precisa de fugas y reparación rápida para evitar cualquier daño.", alt: "Fontanero detectando una fuga de agua" },
+  { icon: ShowerHead, image: bathroomImage, title: "Instalación de baños", description: "Diseño e instalación completa de baños modernos y funcionales.", alt: "Baño moderno recién instalado" },
+  { icon: ThermometerSun, image: waterHeaterImage, title: "Calefacción y calentadores de agua", description: "Instalación, mantenimiento y reparación de calentadores de agua y sistemas de calefacción.", alt: "Instalación de un calentador de agua" },
+  { icon: Bath, image: drainImage, title: "Desatasco de tuberías", description: "Desatasco rápido y eficaz de fregaderos, inodoros, duchas y tuberías.", alt: "Desatasco de tuberías en curso" },
+  { icon: Wrench, image: pipeImage, title: "Reparación de tuberías", description: "Reparación y sustitución de tuberías dañadas o desgastadas.", alt: "Reparación de una tubería" },
+  { icon: House, image: kitchenImage, title: "Fontanería general", description: "Todos sus trabajos de fontanería para el hogar y locales profesionales.", alt: "Trabajo de fontanería general en una vivienda" },
 ];
 
 export function Services() {
@@ -39,7 +39,7 @@ export function Services() {
         </motion.div>
 
         <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {services.map(({ icon: Icon, image, title, description }, index) => (
+          {services.map(({ icon: Icon, image, title, description, alt }, index) => (
             <motion.article
               key={title}
               initial={{ opacity: 0, y: 24 }}
@@ -48,7 +48,7 @@ export function Services() {
               transition={{ duration: 0.5, ease: "easeOut", delay: (index % 3) * 0.1 }}
               className="group overflow-hidden rounded-xl border border-[#dfe7f0] bg-white shadow-[0_5px_14px_rgba(12,45,91,0.07)] transition-all duration-300 hover:-translate-y-2 hover:border-marino-200 hover:shadow-[0_18px_35px_rgba(12,87,158,0.16)]">
               <div className="relative h-[178px] overflow-hidden">
-                <Image src={image as StaticImageData} alt="" fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                <Image src={image as StaticImageData} alt={alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="relative px-7 pb-5 pt-11 text-center">
                 <span className="absolute -top-10 left-1/2 flex h-20 w-20 -translate-x-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_6px_16px_rgba(12,45,91,0.12)] transition-transform duration-300 group-hover:scale-110">
