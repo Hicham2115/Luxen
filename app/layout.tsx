@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Luxen" }],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Luxen – Fontanería y Calefacción en Barakaldo",
+    title: "Luxen | Fontanería y Calefacción en Barakaldo",
     description:
       "Fontanero profesional en Barakaldo: detección de fugas, desatasco de tuberías, calentadores de agua, baños y urgencias 24/7.",
     url: SITE_URL,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luxen – Fontanería y Calefacción en Barakaldo",
+    title: "Luxen | Fontanería y Calefacción en Barakaldo",
     description:
       "Fontanero profesional en Barakaldo: detección de fugas, desatasco de tuberías, calentadores de agua, baños y urgencias 24/7.",
   },
