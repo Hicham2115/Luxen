@@ -60,7 +60,7 @@ export function Pricing() {
               Tarifa horaria
             </p>
             <p className="mt-1 text-[46px] font-extrabold leading-none tracking-[-0.03em]">
-              150 €<span className="text-[20px] font-semibold text-marino-100">/hora</span>
+              50 €<span className="text-[20px] font-semibold text-marino-100">/hora</span>
             </p>
             <p className="mt-5 text-[15px] leading-[1.7] text-marino-100">
               Esta tarifa se aplica a las intervenciones estándar, con una
