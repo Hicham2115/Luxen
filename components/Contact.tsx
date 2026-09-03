@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Select } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import { api, getErrorMessage } from "@/lib/axios";
 
@@ -44,7 +45,7 @@ const services = [
 
 const contactDetails = [
   { icon: Phone, label: "Teléfono", value: "602 83 86 07", href: "tel:602838607" },
-  { icon: Mail, label: "Correo electrónico", value: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
+  { icon: Mail, label: "Correo electrónico", value: "contacto@luxen.es", href: "mailto:contacto@luxen.es" },
   { icon: MapPin, label: "Dirección", value: "Calle Barandiaran 9 bajo, 48903" },
   { icon: Clock3, label: "Disponibilidad", value: "24 horas, 7 días" },
 ];
@@ -274,24 +275,14 @@ export function Contact() {
                       <Label htmlFor={field.name} className="mb-2 text-[14px] font-semibold text-[#06265a]">
                         Servicio <span className="font-normal text-[#8ba0bf]">(opcional)</span>
                       </Label>
-                      <select
+                      <Select
                         id={field.name}
                         name={field.name}
                         value={field.state.value}
                         onBlur={field.handleBlur}
-                        onChange={(e) => field.handleChange(e.target.value)}
-                        className={cn(
-                          inputClassName,
-                          "flex w-full appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220_0_24_24%22 fill=%22none%22 stroke=%22%230ea5e9%22 stroke-width=%222%22><polyline points=%226_9_12_15_18_9%22/></svg>')] bg-[length:16px] bg-[right_1rem_center] bg-no-repeat pr-10",
-                        )}
-                      >
-                        <option value="">Seleccionar…</option>
-                        {services.map((service) => (
-                          <option key={service} value={service}>
-                            {service}
-                          </option>
-                        ))}
-                      </select>
+                        onChange={(value) => field.handleChange(value)}
+                        options={services}
+                      />
                     </div>
                   )}
                 </form.Field>

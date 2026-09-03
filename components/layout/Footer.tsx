@@ -25,7 +25,7 @@ const serviceLinks = [
 
 const contactRows = [
   { icon: Phone, text: "602 83 86 07", href: "tel:602838607" },
-  { icon: Mail, text: "contact@luxen.ma", href: "mailto:contact@luxen.ma" },
+  { icon: Mail, text: "contacto@luxen.es", href: "mailto:contacto@luxen.es" },
   { icon: MapPin, text: "Calle Barandiaran 9 bajo, 48903" },
   { icon: Clock3, text: "24 horas, 7 días" },
 ];
