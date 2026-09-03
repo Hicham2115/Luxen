@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Resend } from "resend";
+import { contactEmailHtml } from "./email-template";
 
 const contactSchema = z.object({
   name: z.string().min(2).max(100),
@@ -20,6 +21,7 @@ export async function POST(req: Request) {
       to: process.env.CONTACT_TO_EMAIL ?? "contacto@luxen.es",
       replyTo: body.email,
       subject: `Nuevo mensaje de contacto — ${body.name}`,
+      html: contactEmailHtml(body),
       text: [
         `Nombre: ${body.name}`,
         `Email: ${body.email}`,
