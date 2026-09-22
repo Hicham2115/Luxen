@@ -143,6 +143,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
   scrollbar-color: var(--color-marino-500) var(--color-marino-50);
   scrollbar-width: thin;
 }
