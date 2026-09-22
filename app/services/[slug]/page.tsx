@@ -74,7 +74,7 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <main className="flex-1 bg-white">
-      <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#041b45_0%,#0b3f85_60%,#1375b9_140%)] px-5 py-16 sm:px-8 sm:py-18">
+      <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#041b45_0%,#0b3f85_60%,#1375b9_140%)] px-5 py-14 sm:px-8 sm:py-18">
         <div className="pointer-events-none absolute -left-20 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-gold-500/10 blur-3xl" />
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full border border-white/10" />
         <div className="relative mx-auto max-w-[1270px]">
@@ -95,13 +95,13 @@ export default async function ServicePage({ params }: Props) {
             <ChevronRight aria-hidden="true" className="h-3.5 w-3.5" />
             <span className="truncate text-white">{service.title}</span>
           </nav>
-          <div className="mt-10 grid items-center gap-10 lg:grid-cols-[1fr_460px]">
+          <div className="mt-8 grid items-center gap-8 sm:mt-10 sm:gap-10 lg:grid-cols-[1fr_460px]">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-4 py-1.5 text-[13px] font-bold uppercase tracking-wide text-[#06265a]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#06265a]" />{" "}
                 Servicio Luxen
               </p>
-              <h1 className="mt-5 max-w-3xl text-[clamp(2.25rem,5vw,4.4rem)] font-extrabold leading-[1.06] tracking-[-0.05em] text-white">
+              <h1 className="mt-5 max-w-3xl text-[clamp(2rem,8vw,4.4rem)] font-extrabold leading-[1.06] tracking-[-0.05em] text-white">
                 {service.title}
               </h1>
               <p className="mt-5 max-w-2xl text-[18px] leading-[1.65] text-white/80">
@@ -169,13 +169,13 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="px-5 py-18 sm:px-8 lg:py-24">
-        <div className="mx-auto grid max-w-[1100px] gap-12 lg:grid-cols-[1.08fr_.92fr] lg:items-start">
+      <section className="px-5 py-14 sm:px-8 sm:py-18 lg:py-24">
+        <div className="mx-auto grid max-w-[1100px] gap-9 sm:gap-12 lg:grid-cols-[1.08fr_.92fr] lg:items-start">
           <div>
             <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-gold-600">
               Nuestro servicio
             </p>
-            <h2 className="mt-3 text-[34px] font-extrabold leading-[1.12] tracking-[-0.04em] text-[#07265b]">
+            <h2 className="mt-3 text-[30px] font-extrabold leading-[1.12] tracking-[-0.04em] text-[#07265b] sm:text-[34px]">
               Una solución clara, desde el primer diagnóstico
             </h2>
             <p className="mt-5 text-[17px] leading-[1.7] text-[#50678e]">
@@ -192,7 +192,7 @@ export default async function ServicePage({ params }: Props) {
               ))}
             </div>
           </div>
-          <aside className="rounded-2xl bg-[#eef8ff] p-7 shadow-[0_12px_30px_rgba(12,45,91,0.08)]">
+          <aside className="rounded-2xl bg-[#eef8ff] p-6 shadow-[0_12px_30px_rgba(12,45,91,0.08)]">
             <ShieldCheck
               aria-hidden="true"
               className="h-10 w-10 text-marino-500"
@@ -216,13 +216,13 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-[#f6f9fc] px-5 py-18 sm:px-8 lg:py-24">
+      <section className="bg-[#f6f9fc] px-5 py-14 sm:px-8 sm:py-18 lg:py-24">
         <div className="mx-auto max-w-[1100px]">
           <div className="max-w-2xl">
             <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-gold-600">
               Qué incluye
             </p>
-            <h2 className="mt-3 text-[34px] font-extrabold tracking-[-0.04em] text-[#07265b]">
+            <h2 className="mt-3 text-[30px] font-extrabold tracking-[-0.04em] text-[#07265b] sm:text-[34px]">
               Todo lo necesario para resolverlo bien
             </h2>
           </div>
@@ -230,7 +230,7 @@ export default async function ServicePage({ params }: Props) {
             {service.included.map((item) => (
               <div
                 key={item}
-                className="flex gap-4 rounded-xl bg-white p-5 shadow-[0_4px_14px_rgba(12,45,91,0.06)]"
+                className="flex gap-3 rounded-xl bg-white p-4 shadow-[0_4px_14px_rgba(12,45,91,0.06)]"
               >
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-marino-50 text-marino-500">
                   <Check aria-hidden="true" className="h-4 w-4" />
@@ -244,13 +244,13 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="px-5 py-18 sm:px-8 lg:py-24">
+      <section className="px-5 py-14 sm:px-8 sm:py-18 lg:py-24">
         <div className="mx-auto max-w-[1100px]">
           <div className="text-center">
             <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-gold-600">
               Cómo trabajamos
             </p>
-            <h2 className="mt-3 text-[34px] font-extrabold tracking-[-0.04em] text-[#07265b]">
+            <h2 className="mt-3 text-[30px] font-extrabold tracking-[-0.04em] text-[#07265b] sm:text-[34px]">
               Simple, transparente y eficaz
             </h2>
           </div>
@@ -274,7 +274,7 @@ export default async function ServicePage({ params }: Props) {
             ].map(([number, title, text]) => (
               <div
                 key={number}
-                className="rounded-2xl border border-[#dfe7f0] p-7"
+                className="rounded-2xl border border-[#dfe7f0] p-5 sm:p-6"
               >
                 <span className="text-[28px] font-extrabold text-gold-500">
                   {number}

@@ -24,7 +24,7 @@ const contactRows = [
 
 export function Footer({ year }: { year: number }) {
   return (
-    <footer className="relative overflow-hidden bg-[#041b45] pt-16 text-white">
+    <footer className="relative overflow-hidden bg-[#041b45] pt-12 text-white sm:pt-16">
       <div className="absolute inset-x-0 top-0 -translate-y-[calc(100%-1px)] leading-none">
         <svg
           viewBox="0 0 1440 90"
@@ -48,7 +48,7 @@ export function Footer({ year }: { year: number }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55, ease: "easeOut" }}
-          className="flex flex-col items-center justify-between gap-7 rounded-[1.75rem] bg-[linear-gradient(120deg,#0ea5e9_0%,#06265a_130%)] px-8 py-10 text-center shadow-[0_25px_55px_rgba(2,15,40,0.45)] sm:flex-row sm:text-left lg:px-14"
+          className="flex flex-col items-center justify-between gap-6 rounded-[1.25rem] bg-[linear-gradient(120deg,#0ea5e9_0%,#06265a_130%)] px-6 py-8 text-center shadow-[0_25px_55px_rgba(2,15,40,0.45)] sm:flex-row sm:rounded-[1.75rem] sm:px-8 sm:py-10 sm:text-left lg:px-14"
         >
           <div>
             <h3 className="text-[26px] font-extrabold leading-[1.2] tracking-[-0.03em] sm:text-[30px]">
@@ -68,7 +68,7 @@ export function Footer({ year }: { year: number }) {
           </a>
         </motion.div>
 
-        <div className="mt-16 grid gap-12 pb-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.9fr_1.1fr_1fr]">
+        <div className="mt-12 grid gap-9 pb-10 sm:mt-16 sm:grid-cols-2 sm:gap-12 sm:pb-12 lg:grid-cols-[1.3fr_0.9fr_1.1fr_1fr]">
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
               <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#06265a_0%,#142850_100%)] text-gold-500 shadow-[0_6px_16px_rgba(20,40,80,0.35)] sm:h-13 sm:w-13 lg:h-11 lg:w-11">

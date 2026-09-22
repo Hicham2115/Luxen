@@ -14,7 +14,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="relative isolate overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-white px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
       <Image src={heroImage} alt="" fill sizes="100vw" className="pointer-events-none absolute inset-0 -z-20 hidden object-cover object-right opacity-35 lg:block" />
       <div className="pointer-events-none absolute inset-0 -z-10 hidden bg-[linear-gradient(90deg,#fff_0%,#fff_48%,rgba(255,255,255,0.78)_72%,rgba(255,255,255,0.84)_100%)] lg:block" />
       <div className="mx-auto max-w-[1270px]">
@@ -26,11 +26,11 @@ export function Process() {
           className="text-center"
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Cómo trabajamos</p>
-          <h2 className="mt-4 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[54px]">Un proceso <span className="text-marino-500">simple</span> y eficaz</h2>
+          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.12] tracking-[-0.055em] text-[#06265a] sm:text-[54px]">Un proceso <span className="text-marino-500">simple</span> y eficaz</h2>
           <p className="mx-auto mt-3 max-w-[640px] text-[18px] leading-[1.55] text-[#4c638c]">Hemos establecido un proceso claro para garantizar<br className="hidden sm:block" /> una experiencia sin estrés y resultados impecables.</p>
         </motion.div>
 
-        <div className="mt-24 grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-18">
+        <div className="mt-14 grid gap-10 sm:mt-16 sm:gap-12 lg:mt-20 lg:grid-cols-4 lg:gap-12">
           {steps.map(({ icon: Icon, number, title, description }, index) => (
             <motion.article
               key={number}
@@ -38,14 +38,14 @@ export function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.15 }}
-              className="group relative min-h-[345px] rounded-xl border border-[#e4ebf3] bg-white px-7 pb-7 pt-[62px] text-center shadow-[0_8px_20px_rgba(11,49,96,0.08)] transition-all duration-300 hover:-translate-y-2 hover:border-marino-200 hover:shadow-[0_18px_35px_rgba(12,87,158,0.15)]"
+              className="group relative min-h-[255px] rounded-xl border border-[#e4ebf3] bg-white px-5 pb-5 pt-13 text-center shadow-[0_8px_20px_rgba(11,49,96,0.08)] transition-all duration-300 hover:-translate-y-1 hover:border-marino-200 hover:shadow-[0_14px_28px_rgba(12,87,158,0.13)] sm:min-h-[280px] sm:px-6 sm:pb-6 sm:pt-14"
             >
-              <span className="absolute -top-[44px] left-1/2 flex h-[88px] w-[88px] -translate-x-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_10px_24px_rgba(11,49,96,0.12)] transition-transform duration-300 group-hover:scale-110"><Icon aria-hidden="true" strokeWidth={1.6} className="h-[38px] w-[38px]" /></span>
-              <p className="text-[28px] font-extrabold leading-none text-marino-500">{number}</p>
-              <h3 className="mx-auto mt-4 max-w-[225px] text-[19px] font-bold leading-[1.2] tracking-[-0.025em] text-[#061e52]">{title}</h3>
-              <span className="mx-auto mt-5 block h-0.5 w-11 bg-gold-500" />
-              <p className="mt-6 text-[14px] leading-[1.65] text-[#4b638c]">{description}</p>
-              {index < steps.length - 1 && <span className="absolute -right-[34px] top-[110px] z-10 hidden h-10 w-10 items-center justify-center rounded-full bg-gold-500 text-marino-500 shadow-[0_6px_14px_rgba(245,183,0,0.35)] lg:flex"><ArrowRight aria-hidden="true" className="h-5 w-5" /></span>}
+              <span className="absolute -top-[37px] left-1/2 flex h-[74px] w-[74px] -translate-x-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_8px_18px_rgba(11,49,96,0.12)] transition-transform duration-300 group-hover:scale-105"><Icon aria-hidden="true" strokeWidth={1.6} className="h-8 w-8" /></span>
+              <p className="text-[24px] font-extrabold leading-none text-marino-500">{number}</p>
+              <h3 className="mx-auto mt-3 max-w-[225px] text-[18px] font-bold leading-[1.2] tracking-[-0.025em] text-[#061e52]">{title}</h3>
+              <span className="mx-auto mt-4 block h-0.5 w-9 bg-gold-500" />
+              <p className="mt-4 text-[14px] leading-[1.58] text-[#4b638c]">{description}</p>
+              {index < steps.length - 1 && <span className="absolute -right-[30px] top-[86px] z-10 hidden h-9 w-9 items-center justify-center rounded-full bg-gold-500 text-marino-500 shadow-[0_6px_14px_rgba(245,183,0,0.35)] lg:flex"><ArrowRight aria-hidden="true" className="h-4 w-4" /></span>}
             </motion.article>
           ))}
         </div>

@@ -8,7 +8,7 @@ import heroImage from "@/app/assets/hero.png";
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-155 items-center overflow-hidden bg-[#06265a] py-24 sm:min-h-175 lg:min-h-200">
+    <section className="relative isolate flex min-h-[620px] items-center overflow-hidden bg-[#06265a] py-20 sm:min-h-175 sm:py-24 lg:min-h-200">
       <video
         autoPlay
         muted
@@ -32,7 +32,7 @@ export function Hero() {
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-4 py-1.5 text-[13px] font-bold uppercase tracking-wide text-[#06265a]">
             Servicios profesionales a su servicio
           </p>
-          <h1 className="mt-6 text-[clamp(2.35rem,6vw,4rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-white">
+          <h1 className="mt-5 text-[clamp(2.1rem,9vw,4rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-white sm:mt-6">
             Su Experto en
             <br />
             Fontanería y Calefacción,
@@ -48,13 +48,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-            className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center"
+            className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4"
           >
             <a
               href="#contact"
               className={cn(
                 buttonVariants({ size: "lg" }),
-                "h-14 gap-3 rounded-full bg-gold-500 px-7 text-[16px] font-semibold text-[#06265a] shadow-[0_12px_26px_rgba(0,0,0,0.28)] hover:bg-gold-600",
+                "h-13 w-full gap-3 rounded-full bg-gold-500 px-7 text-[16px] font-semibold text-[#06265a] shadow-[0_12px_26px_rgba(0,0,0,0.28)] hover:bg-gold-600 sm:h-14 sm:w-auto",
               )}
             >
               Solicitar presupuesto{" "}
@@ -64,7 +64,7 @@ export function Hero() {
               href="#services"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "h-14 gap-3 rounded-full border-transparent bg-white px-6 text-[16px] font-semibold text-[#09245a] hover:bg-white/90",
+                "h-13 w-full gap-3 rounded-full border-transparent bg-white px-6 text-[16px] font-semibold text-[#09245a] hover:bg-white/90 sm:h-14 sm:w-auto",
               )}
             >
               <span className="flex h-6 w-6 items-center justify-center rounded-full border-2 border-marino-500">
@@ -81,7 +81,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
-            className="mt-10 flex flex-wrap items-center gap-4"
+            className="mt-8 flex flex-col items-stretch gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4"
           >
             <div className="flex items-center gap-4 rounded-full bg-white/10 py-2 pl-3 pr-6 backdrop-blur-sm">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500 text-[14px] font-extrabold text-[#06265a]">
@@ -103,7 +103,7 @@ export function Hero() {
               href="https://wa.me/34602838607"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-[14px] font-semibold text-white shadow-[0_10px_24px_rgba(37,211,102,0.35)] hover:bg-[#20bd5a]"
+              className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-[14px] font-semibold text-white shadow-[0_10px_24px_rgba(37,211,102,0.35)] hover:bg-[#20bd5a]"
             >
               <MessageCircle aria-hidden="true" className="h-4 w-4" />
               WhatsApp

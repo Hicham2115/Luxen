@@ -22,7 +22,7 @@ export function Pricing() {
   return (
     <section
       id="pricing"
-      className="overflow-hidden bg-[#fbfdff] px-5 py-20 sm:px-8 lg:py-24"
+      className="overflow-hidden bg-[#fbfdff] px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1270px]">
         <motion.div
@@ -36,7 +36,7 @@ export function Pricing() {
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             Tarifas
           </p>
-          <h2 className="mt-5 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
+          <h2 className="mt-5 text-[32px] font-extrabold leading-[1.12] tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
             Nuestras tarifas de <span className="text-marino-500">intervención</span>
           </h2>
           <p className="mx-auto mt-4 max-w-[600px] text-[17px] leading-[1.65] text-[#4b638c]">
@@ -45,13 +45,13 @@ export function Pricing() {
           </p>
         </motion.div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-stretch">
+        <div className="mt-9 grid gap-5 sm:mt-12 sm:gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-stretch">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex flex-col justify-center rounded-2xl bg-[linear-gradient(160deg,#06265a_0%,#0b3f85_60%,#0ea5e9_150%)] px-8 py-10 text-white shadow-[0_20px_45px_rgba(9,42,83,0.22)]"
+            className="flex flex-col justify-center rounded-2xl bg-[linear-gradient(160deg,#06265a_0%,#0b3f85_60%,#0ea5e9_150%)] px-6 py-7 text-white shadow-[0_20px_45px_rgba(9,42,83,0.22)] sm:px-7 sm:py-8"
           >
             <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-gold-500">
               <Wallet aria-hidden="true" strokeWidth={1.7} className="h-7 w-7" />
@@ -75,7 +75,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-            className="rounded-2xl border border-[#e4ebf3] bg-white px-8 py-8 shadow-[0_8px_20px_rgba(11,49,96,0.07)]"
+            className="rounded-2xl border border-[#e4ebf3] bg-white px-6 py-6 shadow-[0_8px_20px_rgba(11,49,96,0.07)] sm:px-7 sm:py-7"
           >
             <h3 className="text-[19px] font-bold text-[#071e51]">
               Intervenciones estándar
@@ -103,7 +103,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="rounded-xl border border-[#e4ebf3] bg-white px-7 py-7 shadow-[0_6px_16px_rgba(11,49,96,0.06)]"
+            className="rounded-xl border border-[#e4ebf3] bg-white px-5 py-5 shadow-[0_6px_16px_rgba(11,49,96,0.06)] sm:px-6 sm:py-6"
           >
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#edf7ff] text-marino-500">
               <Layers aria-hidden="true" strokeWidth={1.7} className="h-6 w-6" />
@@ -124,7 +124,7 @@ export function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-            className="rounded-xl border border-[#e4ebf3] bg-white px-7 py-7 shadow-[0_6px_16px_rgba(11,49,96,0.06)]"
+            className="rounded-xl border border-[#e4ebf3] bg-white px-5 py-5 shadow-[0_6px_16px_rgba(11,49,96,0.06)] sm:px-6 sm:py-6"
           >
             <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#edf7ff] text-marino-500">
               <CalendarClock aria-hidden="true" strokeWidth={1.7} className="h-6 w-6" />

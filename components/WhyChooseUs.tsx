@@ -16,9 +16,9 @@ const benefits: Benefit[] = [
 
 export function WhyChooseUs() {
   return (
-    <section className="overflow-hidden bg-[#fff] px-5 py-20 sm:px-8 lg:py-24">
+    <section className="overflow-hidden bg-[#fff] px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1270px]">
-        <div className="relative min-h-[360px] lg:min-h-[385px]">
+        <div className="relative lg:min-h-[385px]">
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,7 +27,7 @@ export function WhyChooseUs() {
             className="relative z-10 max-w-[780px] pt-4"
           >
             <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Por qué elegirnos</p>
-            <h2 className="mt-6 text-[40px] font-extrabold leading-[1.16] tracking-[-0.055em] text-[#06265a] sm:text-[53px]">
+            <h2 className="mt-5 text-[33px] font-extrabold leading-[1.14] tracking-[-0.055em] text-[#06265a] sm:mt-6 sm:text-[53px]">
               La calidad y su satisfacción<br className="hidden lg:block" /> son <span className="text-marino-500">nuestra prioridad</span>
             </h2>
             <span className="mt-7 block h-1 w-15 rounded-full bg-gold-500" />
@@ -38,7 +38,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            className="relative mt-10 h-[330px] lg:absolute lg:-right-8 lg:-top-24 lg:mt-0 lg:h-[545px] lg:w-[620px]"
+            className="relative mt-8 h-[280px] sm:mt-10 sm:h-[330px] lg:absolute lg:-right-8 lg:-top-24 lg:mt-0 lg:h-[545px] lg:w-[620px]"
           >
             <Image src={workerImage} alt="Fontanero profesional" fill sizes="(min-width: 1024px) 620px, 100vw" className="object-contain object-center" />
           </motion.div>
@@ -52,12 +52,12 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: "easeOut", delay: (index % 4) * 0.1 }}
-              className="group min-h-[350px] rounded-xl border border-[#e4ebf3] bg-white px-5 py-6 text-center shadow-[0_8px_18px_rgba(11,49,96,0.07)] transition-all duration-300 hover:-translate-y-2 hover:border-marino-200 hover:shadow-[0_18px_35px_rgba(12,87,158,0.15)]"
+              className="group min-h-[255px] rounded-xl border border-[#e4ebf3] bg-white px-4 py-5 text-center shadow-[0_8px_18px_rgba(11,49,96,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-marino-200 hover:shadow-[0_14px_28px_rgba(12,87,158,0.13)] sm:min-h-[285px] sm:px-5 sm:py-6"
             >
-              <span className="mx-auto flex h-[110px] w-[110px] items-center justify-center rounded-full bg-[#edf7ff] text-marino-500 transition-transform duration-300 group-hover:scale-110"><Icon aria-hidden="true" strokeWidth={1.65} className="h-[58px] w-[58px]" /></span>
-              <h3 className="mx-auto mt-5 max-w-[180px] text-[17px] font-bold leading-[1.35] text-[#071e51]">{title}</h3>
-              <span className="mx-auto mt-5 block h-px w-13 bg-gold-500" />
-              <p className="mt-5 text-[14px] leading-[1.7] text-[#3f5882]">{description}</p>
+              <span className="mx-auto flex h-[86px] w-[86px] items-center justify-center rounded-full bg-[#edf7ff] text-marino-500 transition-transform duration-300 group-hover:scale-105"><Icon aria-hidden="true" strokeWidth={1.65} className="h-11 w-11" /></span>
+              <h3 className="mx-auto mt-4 max-w-[180px] text-[17px] font-bold leading-[1.35] text-[#071e51]">{title}</h3>
+              <span className="mx-auto mt-4 block h-px w-10 bg-gold-500" />
+              <p className="mt-4 text-[14px] leading-[1.6] text-[#3f5882]">{description}</p>
             </motion.article>
           ))}
         </div>

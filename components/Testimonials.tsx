@@ -81,7 +81,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative isolate overflow-hidden bg-[#f5f7f8] px-5 py-20 sm:px-8 lg:px-0 lg:py-28"
+      className="relative isolate overflow-hidden bg-[#f5f7f8] px-5 py-16 sm:px-8 sm:py-20 lg:px-0 lg:py-28"
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px bg-[#dbe2e6]" />
       <div className="pointer-events-none absolute right-[-8%] top-16 -z-10 h-72 w-72 rounded-full border border-[#dce5e8]" />
@@ -99,7 +99,7 @@ export function Testimonials() {
             <p className="text-[12px] font-bold uppercase tracking-[0.18em] text-[#a77800]">
               Experiencias reales
             </p>
-            <h2 className="mt-4 text-[37px] font-extrabold leading-[1.08] tracking-[-0.045em] text-[#142850] sm:text-[52px]">
+            <h2 className="mt-4 text-[32px] font-extrabold leading-[1.1] tracking-[-0.045em] text-[#142850] sm:text-[52px]">
               Lo que dicen quienes ya han contado con nosotros.
             </h2>
           </div>
@@ -166,7 +166,7 @@ export function Testimonials() {
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.28, delay: index * 0.06 }}
-                    className="relative flex min-h-[310px] flex-col overflow-hidden border border-[#dfe6e9] bg-white px-7 py-8 sm:px-8"
+                    className="relative flex min-h-[270px] flex-col overflow-hidden border border-[#dfe6e9] bg-white px-6 py-6 sm:min-h-[285px] sm:px-7 sm:py-7"
                   >
                     <span className="absolute left-0 top-0 h-full w-1 bg-gold-500" />
                     <Quote

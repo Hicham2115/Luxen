@@ -23,7 +23,7 @@ const serviceCards = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-white px-5 py-20 sm:px-8 lg:py-24">
+    <section id="services" className="bg-white px-5 py-16 sm:px-8 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-[1270px]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,13 +33,13 @@ export function Services() {
           className="text-center"
         >
           <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase tracking-tight text-marino-500"><span className="h-1.5 w-1.5 rounded-full bg-gold-500" />Nuestros servicios</p>
-          <h2 className="mt-4 text-[34px] font-extrabold tracking-[-0.045em] text-[#07265b] sm:text-[42px]">
+          <h2 className="mt-4 text-[31px] font-extrabold leading-[1.12] tracking-[-0.045em] text-[#07265b] sm:text-[42px]">
             Soluciones de <span className="text-marino-500">fontanería y calefacción</span> para todas sus necesidades
           </h2>
           <p className="mx-auto mt-3 max-w-[620px] text-[17px] leading-[1.55] text-[#50678e]">Combinamos experiencia y pasión para ofrecerle reparaciones,<br className="hidden sm:block" /> instalaciones y mantenimiento de fontanería de calidad.</p>
         </motion.div>
 
-        <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
           {services.map(({ title, shortDescription, slug }, index) => {
             const { icon: Icon, image, alt } = serviceCards[index];
             return (
@@ -55,16 +55,16 @@ export function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: (index % 3) * 0.1 }}
                 className="h-full overflow-hidden rounded-xl border border-[#dfe7f0] bg-white shadow-[0_5px_14px_rgba(12,45,91,0.07)] transition-all duration-300 group-hover:-translate-y-2 group-hover:border-marino-200 group-hover:shadow-[0_18px_35px_rgba(12,87,158,0.16)]">
-              <div className="relative h-[178px] overflow-hidden">
+              <div className="relative h-[150px] overflow-hidden sm:h-[164px]">
                 <Image src={image as StaticImageData} alt={alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
-              <div className="relative px-7 pb-5 pt-11 text-center">
-                <span className="absolute -top-10 left-1/2 flex h-20 w-20 -translate-x-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_6px_16px_rgba(12,45,91,0.12)] transition-transform duration-300 group-hover:scale-110">
-                  <Icon aria-hidden="true" strokeWidth={1.7} className="h-10 w-10" />
+              <div className="relative px-5 pb-4 pt-10 text-center sm:px-6">
+                <span className="absolute -top-9 left-1/2 flex h-[72px] w-[72px] -translate-x-1/2 items-center justify-center rounded-full bg-white text-marino-500 shadow-[0_6px_16px_rgba(12,45,91,0.12)] transition-transform duration-300 group-hover:scale-105">
+                  <Icon aria-hidden="true" strokeWidth={1.7} className="h-9 w-9" />
                 </span>
                 <h3 className="text-[17px] font-bold text-[#071e51]">{title}</h3>
-                <p className="mx-auto mt-2 min-h-[48px] max-w-[330px] text-[14px] leading-[1.45] text-[#4b638c]">{shortDescription}</p>
-                <span className="mt-4 inline-flex items-center gap-2 text-[14px] font-bold text-marino-500 transition-colors group-hover:text-marino-600">
+                <p className="mx-auto mt-2 min-h-[42px] max-w-[330px] text-[14px] leading-[1.45] text-[#4b638c]">{shortDescription}</p>
+                <span className="mt-3 inline-flex items-center gap-2 text-[14px] font-bold text-marino-500 transition-colors group-hover:text-marino-600">
                   Saber más <ArrowRight aria-hidden="true" className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>

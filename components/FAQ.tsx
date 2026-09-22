@@ -83,7 +83,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-24"
+      className="overflow-hidden bg-white px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1270px]">
         <motion.div
@@ -97,7 +97,7 @@ export function FAQ() {
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             Preguntas frecuentes
           </p>
-          <h2 className="mt-5 text-[38px] font-extrabold tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
+          <h2 className="mt-5 text-[32px] font-extrabold leading-[1.12] tracking-[-0.055em] text-[#06265a] sm:text-[48px]">
             Sus preguntas, <span className="text-marino-500">nuestras respuestas</span>
           </h2>
           <p className="mx-auto mt-4 max-w-[560px] text-[17px] leading-[1.65] text-[#4b638c]">
@@ -112,7 +112,7 @@ export function FAQ() {
           </p>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-start lg:gap-10">
+        <div className="mt-9 grid gap-8 sm:mt-12 lg:grid-cols-[1.3fr_1fr] lg:items-start lg:gap-10">
           <div className="flex flex-col gap-4">
             {faqs.map(({ icon: Icon, question, answer }, index) => {
               const isOpen = openIndex === index;
@@ -133,7 +133,7 @@ export function FAQ() {
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     aria-expanded={isOpen}
-                    className="flex w-full items-center gap-4 px-6 py-5 text-left"
+                    className="flex w-full items-center gap-3 px-4 py-4 text-left sm:gap-4 sm:px-6 sm:py-5"
                   >
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-marino-50 text-marino-500">
                       <Icon
@@ -162,7 +162,7 @@ export function FAQ() {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <p className="px-6 pb-5 pl-[84px] text-[15px] leading-[1.7] text-[#4b638c]">
+                        <p className="px-5 pb-5 text-[15px] leading-[1.7] text-[#4b638c] sm:px-6 sm:pl-[84px]">
                           {answer}
                         </p>
                       </motion.div>

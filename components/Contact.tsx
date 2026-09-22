@@ -93,7 +93,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative isolate overflow-hidden bg-[#fbfdff] px-5 py-20 sm:px-8 lg:py-24"
+      className="relative isolate overflow-hidden bg-[#fbfdff] px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1270px]">
         <motion.div
@@ -107,7 +107,7 @@ export function Contact() {
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
             Contáctenos
           </p>
-          <h2 className="mt-5 text-[38px] font-extrabold leading-[1.15] tracking-[-0.055em] text-[#06265a] sm:text-[52px]">
+          <h2 className="mt-5 text-[32px] font-extrabold leading-[1.15] tracking-[-0.055em] text-[#06265a] sm:text-[52px]">
             Hablemos de <span className="text-marino-500">su proyecto</span>
           </h2>
           <p className="mx-auto mt-5 max-w-[560px] text-[17px] leading-[1.7] text-[#4b638c]">
@@ -116,13 +116,13 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="mt-14 grid overflow-hidden rounded-[2rem] shadow-[0_25px_60px_rgba(9,42,83,0.14)] lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="mt-10 grid overflow-hidden rounded-[1.5rem] shadow-[0_25px_60px_rgba(9,42,83,0.14)] sm:mt-14 sm:rounded-[2rem] lg:grid-cols-[0.85fr_1.15fr]">
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative flex flex-col justify-between gap-12 overflow-hidden bg-[linear-gradient(160deg,#06265a_0%,#0b3f85_55%,#0ea5e9_150%)] px-8 py-12 text-white sm:px-10 lg:py-14"
+            className="relative flex flex-col justify-between gap-8 overflow-hidden bg-[linear-gradient(160deg,#06265a_0%,#0b3f85_55%,#0ea5e9_150%)] px-6 py-8 text-white sm:gap-10 sm:px-8 sm:py-10 lg:gap-12 lg:px-10 lg:py-14"
           >
             <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/5" />
             <div className="pointer-events-none absolute -bottom-24 -left-10 h-72 w-72 rounded-full bg-white/5" />
@@ -173,7 +173,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="bg-white px-6 py-10 sm:px-10 lg:py-14"
+            className="bg-white px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-14"
           >
             <form
               onSubmit={(e) => {

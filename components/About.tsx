@@ -62,22 +62,22 @@ export function About() {
   return (
     <section
       id="about"
-      className="overflow-hidden bg-white px-5 py-20 sm:px-8 lg:py-24"
+      className="overflow-hidden bg-white px-5 py-16 sm:px-8 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1270px]">
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#fbfdff] lg:min-h-[700px]">
+        <div className="relative overflow-hidden rounded-[1.5rem] bg-[#fbfdff] sm:rounded-[2rem] lg:min-h-[700px]">
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative z-10 max-w-[600px] px-7 py-12 sm:px-12 lg:px-0 lg:py-15"
+            className="relative z-10 max-w-[600px] px-6 py-9 sm:px-12 sm:py-12 lg:px-0 lg:py-15"
           >
             <p className="inline-flex items-center gap-2 rounded-full bg-gold-500/15 px-4 py-1.5 text-[13px] font-bold uppercase text-marino-500">
               <span className="h-1.5 w-1.5 rounded-full bg-gold-500" />
               Sobre nosotros
             </p>
-            <h2 className="mt-6 text-[38px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:text-[49px]">
+            <h2 className="mt-5 text-[32px] font-extrabold leading-[1.15] tracking-[-0.05em] text-[#06265a] sm:mt-6 sm:text-[49px]">
               Una empresa de fontanería y calefacción
               <br className="hidden lg:block" />{" "}
               <span className="text-marino-500">fiable y apasionada</span>
@@ -100,11 +100,11 @@ export function About() {
                   transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 + index * 0.1 }}
                   className="flex gap-4"
                 >
-                  <span className="flex h-[70px] w-[70px] shrink-0 items-center justify-center rounded-xl bg-white text-marino-500 shadow-[0_7px_18px_rgba(11,49,96,0.1)]">
+                  <span className="flex h-[60px] w-[60px] shrink-0 items-center justify-center rounded-xl bg-white text-marino-500 shadow-[0_7px_18px_rgba(11,49,96,0.1)]">
                     <Icon
                       aria-hidden="true"
                       strokeWidth={1.65}
-                      className="h-9 w-9"
+                      className="h-8 w-8"
                     />
                   </span>
                   <div>
@@ -125,7 +125,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="relative h-[410px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[58%]"
+            className="relative h-[320px] sm:h-[410px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[58%]"
           >
             <Image
               src={workerImage}
