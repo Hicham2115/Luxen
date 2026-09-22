@@ -172,7 +172,7 @@ export function Testimonials() {
                   {testimonial.quote}
                 </p>
                 <div className="mt-auto flex items-center gap-4 border-t border-[#e6edf5] pt-5">
-                  <span className="flex h-18 w-18 shrink-0 items-center justify-center rounded-full bg-marino-500 text-[26px] font-bold text-white">
+                  <span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-full bg-marino-500 text-[26px] font-bold text-white">
                     {testimonial.name.charAt(0)}
                   </span>
                   <div className="min-w-0">
