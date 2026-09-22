@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import { ArrowRight, MessageCircle, Play } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import heroImage from "@/app/assets/hero.png";
 
 export function Hero() {
   return (
@@ -14,7 +13,8 @@ export function Hero() {
         muted
         loop
         playsInline
-        poster={heroImage.src}
+        preload="auto"
+        poster="/herovideo-poster.jpg"
         aria-hidden="true"
         className="absolute inset-0 -z-20 h-full w-full object-cover"
       >
