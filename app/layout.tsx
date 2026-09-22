@@ -101,7 +101,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
-          <Footer />
+          <Footer year={new Date().getFullYear()} />
           <Toaster position="top-right" richColors />
         </Providers>
       </body>

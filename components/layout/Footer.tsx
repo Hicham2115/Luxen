@@ -22,7 +22,7 @@ const contactRows = [
   { icon: Clock3, text: "24 horas, 7 días" },
 ];
 
-export function Footer() {
+export function Footer({ year }: { year: number }) {
   return (
     <footer className="relative overflow-hidden bg-[#041b45] pt-16 text-white">
       <div className="absolute inset-x-0 top-0 -translate-y-[calc(100%-1px)] leading-none">
@@ -122,8 +122,9 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-[14px] text-white/80 transition-colors hover:text-white"
+                    className="group inline-flex items-center gap-1.5 text-[14px] text-white/80 transition-colors duration-200 hover:text-gold-400"
                   >
+                    <span className="h-px w-0 bg-gold-400 transition-all duration-200 group-hover:w-3" />
                     {link.label}
                   </a>
                 </li>
@@ -140,8 +141,9 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-[14px] text-white/80 transition-colors hover:text-white"
+                    className="group inline-flex items-center gap-1.5 text-[14px] text-white/80 transition-colors duration-200 hover:text-gold-400"
                   >
+                    <span className="h-px w-0 bg-gold-400 transition-all duration-200 group-hover:w-3" />
                     {service.title}
                   </Link>
                 </li>
@@ -160,7 +162,7 @@ export function Footer() {
                   {href ? (
                     <a
                       href={href}
-                      className="text-[14px] text-white transition-colors hover:text-white"
+                      className="inline-flex text-[14px] text-white transition-colors duration-200 hover:-translate-y-px hover:text-gold-400"
                     >
                       {text}
                     </a>
@@ -175,13 +177,13 @@ export function Footer() {
 
         <div className="flex items-center justify-center border-t border-white/10 py-6 text-[13px] text-white">
           <p>
-            © {new Date().getFullYear()} Luxen. Todos los derechos reservados.
+            © {year} Luxen. Todos los derechos reservados.
           </p>
         </div>
         <p className="relative pb-6 text-center text-[11px] text-white/70">
           – Designed &amp; developed by{" "}
           <a
-            className="underline decoration-[#8a8378]/30 underline-offset-2 transition-colors duration-200 hover:text-[#8a8378]"
+            className="underline decoration-gold-400/40 underline-offset-4 transition-all duration-200 hover:text-gold-400 hover:decoration-gold-400"
             href="https://www.stallionadvertising.ma/"
             target="_blank"
             rel="noopener noreferrer"
