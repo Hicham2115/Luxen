@@ -71,16 +71,16 @@ export function Footer() {
         <div className="mt-16 grid gap-12 pb-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.9fr_1.1fr_1fr]">
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <span className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-marino-400">
+              <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,#06265a_0%,#142850_100%)] text-gold-500 shadow-[0_6px_16px_rgba(20,40,80,0.35)] sm:h-13 sm:w-13 lg:h-11 lg:w-11">
                 <Droplet
                   aria-hidden="true"
-                  strokeWidth={2.5}
-                  className="h-6 w-6"
+                  strokeWidth={2.2}
+                  className="h-6 w-6 sm:h-7 sm:w-7 lg:h-6 lg:w-6"
                 />
                 <Wrench
                   aria-hidden="true"
-                  strokeWidth={2.4}
-                  className="absolute bottom-1 right-1 h-3 w-3 rounded-full bg-[#041b45] p-0.5"
+                  strokeWidth={2.3}
+                  className="absolute -bottom-0.5 -right-0.5 h-4 w-4 rounded-full bg-gold-500 p-0.5 text-marino-500 sm:h-4.5 sm:w-4.5"
                 />
               </span>
               <span className="text-[22px] font-extrabold tracking-tight">
@@ -122,7 +122,7 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
+                    className="text-[14px] text-white/80 transition-colors hover:text-white"
                   >
                     {link.label}
                   </a>
@@ -140,7 +140,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
+                    className="text-[14px] text-white/80 transition-colors hover:text-white"
                   >
                     {service.title}
                   </Link>
@@ -154,20 +154,18 @@ export function Footer() {
             <ul className="mt-5 space-y-4">
               {contactRows.map(({ icon: Icon, text, href }) => (
                 <li key={text} className="flex items-center gap-3">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-marino-400">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/10 text-marino-900">
                     <Icon aria-hidden="true" className="h-4 w-4" />
                   </span>
                   {href ? (
                     <a
                       href={href}
-                      className="text-[14px] text-marino-100/80 transition-colors hover:text-white"
+                      className="text-[14px] text-white transition-colors hover:text-white"
                     >
                       {text}
                     </a>
                   ) : (
-                    <span className="text-[14px] text-marino-100/80">
-                      {text}
-                    </span>
+                    <span className="text-[14px] text-white">{text}</span>
                   )}
                 </li>
               ))}
@@ -188,7 +186,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Stallion Advertising 
+            Stallion Advertising
           </a>
           .
         </p>

@@ -7,8 +7,10 @@ import {
   Check,
   ChevronRight,
   ClipboardCheck,
+  Clock3,
   Phone,
   ShieldCheck,
+  Star,
 } from "lucide-react";
 import leakImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_21_54 PM.png";
 import bathroomImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_23_02 PM.png";
@@ -19,12 +21,27 @@ import pipeImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_30_1
 import { getService, services } from "@/lib/services";
 
 const serviceImages: Record<string, { image: StaticImageData; alt: string }> = {
-  "deteccion-reparacion-fugas": { image: leakImage, alt: "Fontanero detectando una fuga de agua" },
-  "instalacion-banos": { image: bathroomImage, alt: "Baño moderno recién instalado" },
-  "calefaccion-calentadores-agua": { image: waterHeaterImage, alt: "Instalación de un calentador de agua" },
-  "desatasco-tuberias": { image: drainImage, alt: "Desatasco de tuberías en curso" },
+  "deteccion-reparacion-fugas": {
+    image: leakImage,
+    alt: "Fontanero detectando una fuga de agua",
+  },
+  "instalacion-banos": {
+    image: bathroomImage,
+    alt: "Baño moderno recién instalado",
+  },
+  "calefaccion-calentadores-agua": {
+    image: waterHeaterImage,
+    alt: "Instalación de un calentador de agua",
+  },
+  "desatasco-tuberias": {
+    image: drainImage,
+    alt: "Desatasco de tuberías en curso",
+  },
   "reparacion-tuberias": { image: pipeImage, alt: "Reparación de una tubería" },
-  "fontaneria-general": { image: kitchenImage, alt: "Trabajo de fontanería general en una vivienda" },
+  "fontaneria-general": {
+    image: kitchenImage,
+    alt: "Trabajo de fontanería general en una vivienda",
+  },
 };
 
 type Props = { params: Promise<{ slug: string }> };
@@ -55,7 +72,7 @@ export default async function ServicePage({ params }: Props) {
 
   return (
     <main className="flex-1 bg-white">
-      <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#041b45_0%,#0b3f85_60%,#1375b9_140%)] px-5 py-18 sm:px-8 sm:py-22">
+      <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#041b45_0%,#0b3f85_60%,#1375b9_140%)] px-5 py-16 sm:px-8 sm:py-18">
         <div className="pointer-events-none absolute -left-20 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-gold-500/10 blur-3xl" />
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full border border-white/10" />
         <div className="relative mx-auto max-w-[1270px]">
@@ -76,7 +93,7 @@ export default async function ServicePage({ params }: Props) {
             <ChevronRight aria-hidden="true" className="h-3.5 w-3.5" />
             <span className="truncate text-white">{service.title}</span>
           </nav>
-          <div className="mt-10 grid items-center gap-10 lg:grid-cols-[1fr_330px]">
+          <div className="mt-10 grid items-center gap-10 lg:grid-cols-[1fr_460px]">
             <div>
               <p className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-4 py-1.5 text-[13px] font-bold uppercase tracking-wide text-[#06265a]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#06265a]" />{" "}
@@ -88,24 +105,63 @@ export default async function ServicePage({ params }: Props) {
               <p className="mt-5 max-w-2xl text-[18px] leading-[1.65] text-white/80">
                 {service.heroDescription}
               </p>
-              <Link
-                href="/#contact"
-                className="mt-8 inline-flex h-13 items-center gap-3 rounded-full bg-gold-500 px-6 text-[15px] font-bold text-[#06265a] shadow-[0_12px_26px_rgba(0,0,0,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-gold-400"
-              >
-                Solicitar presupuesto{" "}
-                <ArrowRight aria-hidden="true" className="h-4.5 w-4.5" />
-              </Link>
+              <div className="mt-8 flex flex-wrap items-center gap-5">
+                <Link
+                  href="/#contact"
+                  className="inline-flex h-13 items-center gap-3 rounded-full bg-gold-500 px-6 text-[15px] font-bold text-[#06265a] shadow-[0_12px_26px_rgba(0,0,0,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-gold-400"
+                >
+                  Solicitar presupuesto{" "}
+                  <ArrowRight aria-hidden="true" className="h-4.5 w-4.5" />
+                </Link>
+                <a
+                  href="tel:+34602838607"
+                  className="inline-flex items-center gap-2 text-[14px] font-bold text-white transition-colors hover:text-gold-400"
+                >
+                  <Phone aria-hidden="true" className="h-4 w-4 text-gold-500" />{" "}
+                  +34 602 83 86 07
+                </a>
+              </div>
+              <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/15 pt-5 text-[13px] font-semibold text-white/80">
+                <span className="inline-flex items-center gap-2">
+                  <Clock3
+                    aria-hidden="true"
+                    className="h-4 w-4 text-gold-500"
+                  />{" "}
+                  Urgencias 24/7
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <ShieldCheck
+                    aria-hidden="true"
+                    className="h-4 w-4 text-gold-500"
+                  />{" "}
+                  Presupuesto sin compromiso
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <Star
+                    aria-hidden="true"
+                    className="h-4 w-4 fill-gold-500 text-gold-500"
+                  />{" "}
+                  Profesionales de confianza
+                </span>
+              </div>
             </div>
-            <div className="relative aspect-square overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
               <Image
                 src={serviceImage.image}
                 alt={serviceImage.alt}
                 fill
-                sizes="(min-width: 1024px) 330px, 80vw"
+                sizes="(min-width: 1024px) 460px, 80vw"
                 className="object-cover"
                 priority
               />
               <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(4,27,69,0.18),transparent_60%)]" />
+              <div className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full bg-[#041b45]/90 px-4 py-2.5 text-[12px] font-bold text-white shadow-lg backdrop-blur-sm">
+                <ShieldCheck
+                  aria-hidden="true"
+                  className="h-4 w-4 text-gold-500"
+                />{" "}
+                Intervención rápida y cuidada
+              </div>
             </div>
           </div>
         </div>
@@ -237,7 +293,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-[#041b45] px-5 py-16 text-center sm:px-8">
+      {/* <section className="bg-[#041b45] px-5 py-16 text-center sm:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-[30px] font-extrabold tracking-[-0.04em] text-white">
             ¿Hablamos de su proyecto?
@@ -253,7 +309,7 @@ export default async function ServicePage({ params }: Props) {
             <ArrowRight aria-hidden="true" className="h-4.5 w-4.5" />
           </Link>
         </div>
-      </section>
+      </section>  */}
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { LenisProvider } from "@/components/LenisProvider";
 import { Providers } from "@/app/providers";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
@@ -100,11 +99,9 @@ export default function RootLayout({
           }}
         />
         <Providers>
-          <LenisProvider>
-            <Header />
-            {children}
-            <Footer />
-          </LenisProvider>
+          <Header />
+          {children}
+          <Footer />
           <Toaster position="top-right" richColors />
         </Providers>
       </body>
