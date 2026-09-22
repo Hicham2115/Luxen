@@ -19,6 +19,8 @@ import drainImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_25_
 import kitchenImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_26_07 PM.png";
 import pipeImage from "@/app/assets/services/ChatGPT Image Jul 21, 2026, 12_30_11 PM.png";
 import { getService, services } from "@/lib/services";
+import { Testimonials } from "@/components/Testimonials";
+import { Contact } from "@/components/Contact";
 
 const serviceImages: Record<string, { image: StaticImageData; alt: string }> = {
   "deteccion-reparacion-fugas": {
@@ -310,6 +312,9 @@ export default async function ServicePage({ params }: Props) {
           </Link>
         </div>
       </section>  */}
+
+      <Testimonials />
+      <Contact />
     </main>
   );
 }
