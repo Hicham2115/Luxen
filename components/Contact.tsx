@@ -3,6 +3,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "@tanstack/react-form";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { z } from "zod";
 import {
@@ -60,12 +61,12 @@ const inputClassName =
   "h-13 rounded-xl border-[#e1e9f2] bg-[#f8fbfe] px-4 text-[15px] text-[#06265a] shadow-none focus-visible:border-marino-500 focus-visible:bg-white focus-visible:ring-4 focus-visible:ring-marino-500/15 aria-invalid:border-red-400 aria-invalid:ring-red-400/15";
 
 export function Contact() {
+  const router = useRouter();
   const mutation = useMutation({
     mutationFn: (data: ContactInput) =>
       api.post("/api/contact", data).then((res) => res.data),
     onSuccess: () => {
-      toast.success("¡Mensaje enviado! Le responderemos en breve.");
-      form.reset();
+      router.push("/thank-you");
     },
     onError: (error) => {
       toast.error(getErrorMessage(error));

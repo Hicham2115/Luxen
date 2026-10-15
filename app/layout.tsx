@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "@/app/providers";
 import { Toaster } from "@/components/ui/sonner";
+import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
 const SITE_URL = "https://www.luxen.es";
@@ -92,6 +93,9 @@ export default function RootLayout({
   return (
     <html lang="es" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+          <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
